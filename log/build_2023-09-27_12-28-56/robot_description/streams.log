@@ -1,0 +1,33 @@
+[2.390s] Invoking command in '/home/daniel/dev_ws/src/robot_description': PYTHONPATH=/home/daniel/dev_ws/build/robot_description/prefix_override:/home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/daniel/dev_ws/build/robot_description/build install --record /home/daniel/dev_ws/build/robot_description/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed
+[2.612s] running egg_info
+[2.612s] creating ../../build/robot_description/robot_description.egg-info
+[2.612s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[2.613s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[2.613s] writing entry points to ../../build/robot_description/robot_description.egg-info/entry_points.txt
+[2.613s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[2.613s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[2.614s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[2.647s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[2.648s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[2.648s] running build
+[2.648s] running build_py
+[2.648s] creating /home/daniel/dev_ws/build/robot_description/build
+[2.648s] creating /home/daniel/dev_ws/build/robot_description/build/lib
+[2.648s] creating /home/daniel/dev_ws/build/robot_description/build/lib/robot_description
+[2.648s] copying robot_description/__init__.py -> /home/daniel/dev_ws/build/robot_description/build/lib/robot_description
+[2.648s] running install
+[2.649s] running install_lib
+[2.650s] creating /home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages/robot_description
+[2.650s] copying /home/daniel/dev_ws/build/robot_description/build/lib/robot_description/__init__.py -> /home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages/robot_description
+[2.650s] byte-compiling /home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages/robot_description/__init__.py to __init__.cpython-38.pyc
+[2.651s] running install_data
+[2.652s] creating /home/daniel/dev_ws/install/robot_description/share/ament_index
+[2.652s] creating /home/daniel/dev_ws/install/robot_description/share/ament_index/resource_index
+[2.652s] creating /home/daniel/dev_ws/install/robot_description/share/ament_index/resource_index/packages
+[2.652s] copying resource/robot_description -> /home/daniel/dev_ws/install/robot_description/share/ament_index/resource_index/packages
+[2.652s] copying package.xml -> /home/daniel/dev_ws/install/robot_description/share/robot_description
+[2.653s] running install_egg_info
+[2.654s] Copying ../../build/robot_description/robot_description.egg-info to /home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages/robot_description-0.0.0-py3.8.egg-info
+[2.655s] running install_scripts
+[2.671s] writing list of installed files to '/home/daniel/dev_ws/build/robot_description/install.log'
+[2.692s] Invoked command in '/home/daniel/dev_ws/src/robot_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/robot_description/prefix_override:/home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/daniel/dev_ws/build/robot_description/build install --record /home/daniel/dev_ws/build/robot_description/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed

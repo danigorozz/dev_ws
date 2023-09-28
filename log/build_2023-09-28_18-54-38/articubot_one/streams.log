@@ -1,0 +1,55 @@
+[0.201s] Invoking command in '/home/daniel/dev_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/opt/ros/foxy /usr/bin/cmake /home/daniel/dev_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/daniel/dev_ws/install/articubot_one
+[0.215s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.242s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.423s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.431s] -- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)
+[0.451s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.515s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.518s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.518s] -- Added test 'lint_cmake' to check CMake code style
+[0.519s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.521s] -- Added test 'xmllint' to check XML markup files
+[0.523s] -- Configuring done
+[0.525s] -- Generating done
+[0.527s] -- Build files have been written to: /home/daniel/dev_ws/build/articubot_one
+[0.532s] Invoked command in '/home/daniel/dev_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/opt/ros/foxy /usr/bin/cmake /home/daniel/dev_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/daniel/dev_ws/install/articubot_one
+[0.533s] Invoking command in '/home/daniel/dev_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/articubot_one -- -j8 -l8
+[0.575s] Invoked command in '/home/daniel/dev_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/articubot_one -- -j8 -l8
+[0.607s] Invoking command in '/home/daniel/dev_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/articubot_one
+[0.615s] -- Install configuration: ""
+[0.615s] -- Execute custom install script
+[0.616s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/config/empty.yaml
+[0.616s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz
+[0.616s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
+[0.617s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
+[0.617s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/description/robot_base.urdf.xacro
+[0.617s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro
+[0.617s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/description/robot_essentials.xacro
+[0.618s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py
+[0.618s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/worlds/empty.world
+[0.619s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/meshes/arm_base.stl
+[0.619s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/meshes/base_link.dae
+[0.619s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/meshes/base_link.stl
+[0.619s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/meshes/bicep.stl
+[0.620s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/meshes/elbow.stl
+[0.620s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/meshes/robot_base.dae
+[0.620s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/meshes/robot_base.stl
+[0.620s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/meshes/wheel.stl
+[0.620s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/meshes/wrist.stl
+[0.620s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
+[0.621s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
+[0.621s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh
+[0.621s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv
+[0.622s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/environment/path.sh
+[0.622s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/environment/path.dsv
+[0.622s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/local_setup.bash
+[0.622s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/local_setup.sh
+[0.623s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/local_setup.zsh
+[0.623s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/local_setup.dsv
+[0.623s] -- Symlinking: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/package.dsv
+[0.633s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one
+[0.633s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.634s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake
+[0.634s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake
+[0.634s] -- Up-to-date symlink: /home/daniel/dev_ws/install/articubot_one/share/articubot_one/package.xml
+[0.636s] Invoked command in '/home/daniel/dev_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/articubot_one
