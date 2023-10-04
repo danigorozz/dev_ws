@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="robot_base" >
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
 
     <xacro:include filename="robot_essentials.xacro"/>
 
@@ -7,12 +7,22 @@
         <visual>
             <origin xyz="0 0 0" rpy="1.5707963267949 0 3.14"/>
             <geometry>
-                <mesh filename="package://articubot_one/meshes/robot_base.stl"/>
+                <!-- <mesh filename="package://articubot_one/meshes/robot_base.stl"/> -->
+                <box size="0.65 0.2 0.4"/>
             </geometry>
             <material name="">
                 <color rgba="0.79216 0.81961 0.93333 1"/>
             </material>
         </visual>
+        <collision>
+            <origin xyz="0 0 0.05" rpy="1.5707963267949 0 3.14"/>
+            <geometry>
+                <box size="0.650 0.200 0.400"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="47" x="0.650" y="0.200" z="0.400">
+            <origin xyz="0 0 0.05" rpy="0 0 0"/>
+        </xacro:inertial_box>
     </link>
 
     <!-- Ruedas -->
@@ -31,16 +41,24 @@
     <!-- Fron left wheel -->
     <link name="front_left_wheel">
         <visual>
-            <origin
-            xyz="0 0 0"
-            rpy="0 0 0" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://articubot_one/meshes/wheel.stl" />
+                <!-- <mesh filename="package://articubot_one/meshes/wheel.stl" /> -->
+                <cylinder radius="0.1" length="0.05"/>
             </geometry>
             <material name="">
                 <color rgba="0.79216 0.81961 0.93333 1" />
             </material>
         </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <cylinder radius="0.1" length="0.1"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="2" length="0.1" radius="0.1">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
     </link>
 
     <joint name="front_left_wheel_joint" type="continuous">
@@ -48,7 +66,7 @@
         <parent link ="base_link"/>
         <child link ="front_left_wheel"/>
         <origin rpy ="${-pi/2} 0 0" xyz= "0.220 0.250 0"/>
-  </joint>
+    </joint>
 
   <!-- Front right wheel -->
     <link name="front_right_wheel">
@@ -57,12 +75,22 @@
             xyz="0 0 0"
             rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://articubot_one/meshes/wheel.stl" />
+                <!-- <mesh filename="package://articubot_one/meshes/wheel.stl" /> -->
+                <cylinder radius="0.1" length="0.05"/>
             </geometry>
             <material name="">
                 <color rgba="0.79216 0.81961 0.93333 1" />
             </material>
         </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <cylinder radius="0.1" length="0.1"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="2" length="0.1" radius="0.1">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
     </link>
 
     <joint name="front_right_wheel_joint" type="continuous">
@@ -70,7 +98,7 @@
         <parent link ="base_link"/>
         <child link ="front_right_wheel"/>
         <origin rpy ="${pi/2} 0 0" xyz= "0.220 -0.250 0"/>
-  </joint>
+    </joint>
 
   <!-- Rear left wheel -->
     <link name="rear_left_wheel">
@@ -79,12 +107,22 @@
             xyz="0 0 0"
             rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://articubot_one/meshes/wheel.stl" />
+                <!-- <mesh filename="package://articubot_one/meshes/wheel.stl" /> -->
+                <cylinder radius="0.1" length="0.05"/>
             </geometry>
             <material name="">
                 <color rgba="0.79216 0.81961 0.93333 1" />
             </material>
         </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <cylinder radius="0.1" length="0.1"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="2" length="0.1" radius="0.1">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
     </link>
 
     <joint name="rear_left_wheel_joint" type="continuous">
@@ -101,12 +139,22 @@
             xyz="0 0 0"
             rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://articubot_one/meshes/wheel.stl" />
+                <!-- <mesh filename="package://articubot_one/meshes/wheel.stl" /> -->
+                <cylinder radius="0.1" length="0.05"/>
             </geometry>
             <material name="">
                 <color rgba="0.79216 0.81961 0.93333 1" />
             </material>
         </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <cylinder radius="0.1" length="0.1"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="2" length="0.1" radius="0.1">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
     </link>
 
     <joint name="rear_right_wheel_joint" type="continuous">
@@ -114,6 +162,6 @@
         <parent link ="base_link"/>
         <child link ="rear_right_wheel"/>
         <origin rpy ="${pi/2} 0 0" xyz= "-0.220 -0.250 0"/>
-  </joint>
+    </joint>
 
 </robot>
