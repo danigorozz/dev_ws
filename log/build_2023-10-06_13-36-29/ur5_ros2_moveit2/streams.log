@@ -1,0 +1,58 @@
+[0.210s] Invoking command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/daniel/dev_ws/src/ur5_ros2_moveit2 -DCMAKE_INSTALL_PREFIX=/home/daniel/dev_ws/install/ur5_ros2_moveit2
+[0.270s] -- The C compiler identification is GNU 9.4.0
+[0.328s] -- The CXX compiler identification is GNU 9.4.0
+[0.334s] -- Check for working C compiler: /usr/bin/cc
+[0.404s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.404s] -- Detecting C compiler ABI info
+[0.474s] -- Detecting C compiler ABI info - done
+[0.486s] -- Detecting C compile features
+[0.487s] -- Detecting C compile features - done
+[0.490s] -- Check for working CXX compiler: /usr/bin/c++
+[0.573s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.574s] -- Detecting CXX compiler ABI info
+[0.655s] -- Detecting CXX compiler ABI info - done
+[0.666s] -- Detecting CXX compile features
+[0.667s] -- Detecting CXX compile features - done
+[0.669s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.699s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.700s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.912s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.983s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.985s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.988s] -- Added test 'lint_cmake' to check CMake code style
+[0.990s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.990s] -- Added test 'xmllint' to check XML markup files
+[0.991s] -- Configuring done
+[0.992s] -- Generating done
+[0.993s] -- Build files have been written to: /home/daniel/dev_ws/build/ur5_ros2_moveit2
+[1.072s] Invoked command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/daniel/dev_ws/src/ur5_ros2_moveit2 -DCMAKE_INSTALL_PREFIX=/home/daniel/dev_ws/install/ur5_ros2_moveit2
+[1.074s] Invoking command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/ur5_ros2_moveit2 -- -j8 -l8
+[1.113s] Invoked command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/ur5_ros2_moveit2 -- -j8 -l8
+[1.136s] Invoking command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/ur5_ros2_moveit2
+[1.144s] -- Install configuration: ""
+[1.145s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config
+[1.145s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/chomp_planning.yaml
+[1.145s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/ur5.srdf
+[1.145s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/ur5_moveit2.rviz
+[1.145s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/ur5_controllers.yaml
+[1.145s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/ompl_planning.yaml
+[1.145s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/kinematics.yaml
+[1.146s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/launch
+[1.146s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/launch/ur5_interface.launch.py
+[1.146s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/launch/ur5.launch.py
+[1.146s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ament_index/resource_index/package_run_dependencies/ur5_ros2_moveit2
+[1.146s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ament_index/resource_index/parent_prefix_path/ur5_ros2_moveit2
+[1.146s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/environment/ament_prefix_path.sh
+[1.146s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/environment/ament_prefix_path.dsv
+[1.147s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/environment/path.sh
+[1.147s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/environment/path.dsv
+[1.147s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/local_setup.bash
+[1.147s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/local_setup.sh
+[1.147s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/local_setup.zsh
+[1.147s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/local_setup.dsv
+[1.147s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/package.dsv
+[1.147s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ament_index/resource_index/packages/ur5_ros2_moveit2
+[1.148s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/cmake/ur5_ros2_moveit2Config.cmake
+[1.148s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/cmake/ur5_ros2_moveit2Config-version.cmake
+[1.148s] -- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/package.xml
+[1.150s] Invoked command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/ur5_ros2_moveit2

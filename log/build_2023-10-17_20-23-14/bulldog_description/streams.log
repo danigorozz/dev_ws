@@ -1,0 +1,33 @@
+[1.138s] Invoking command in '/home/daniel/dev_ws/src/bulldog_description': PYTHONPATH=/home/daniel/dev_ws/build/bulldog_description/prefix_override:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bulldog_description build --build-base /home/daniel/dev_ws/build/bulldog_description/build install --record /home/daniel/dev_ws/build/bulldog_description/install.log --install-scripts $base/lib/bulldog_description --single-version-externally-managed
+[1.367s] running egg_info
+[1.367s] creating ../../build/bulldog_description/bulldog_description.egg-info
+[1.368s] writing ../../build/bulldog_description/bulldog_description.egg-info/PKG-INFO
+[1.368s] writing dependency_links to ../../build/bulldog_description/bulldog_description.egg-info/dependency_links.txt
+[1.368s] writing entry points to ../../build/bulldog_description/bulldog_description.egg-info/entry_points.txt
+[1.369s] writing requirements to ../../build/bulldog_description/bulldog_description.egg-info/requires.txt
+[1.369s] writing top-level names to ../../build/bulldog_description/bulldog_description.egg-info/top_level.txt
+[1.370s] writing manifest file '../../build/bulldog_description/bulldog_description.egg-info/SOURCES.txt'
+[1.401s] reading manifest file '../../build/bulldog_description/bulldog_description.egg-info/SOURCES.txt'
+[1.402s] writing manifest file '../../build/bulldog_description/bulldog_description.egg-info/SOURCES.txt'
+[1.402s] running build
+[1.402s] running build_py
+[1.402s] creating /home/daniel/dev_ws/build/bulldog_description/build
+[1.403s] creating /home/daniel/dev_ws/build/bulldog_description/build/lib
+[1.403s] creating /home/daniel/dev_ws/build/bulldog_description/build/lib/bulldog_description
+[1.403s] copying bulldog_description/__init__.py -> /home/daniel/dev_ws/build/bulldog_description/build/lib/bulldog_description
+[1.403s] running install
+[1.403s] running install_lib
+[1.405s] creating /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog_description
+[1.405s] copying /home/daniel/dev_ws/build/bulldog_description/build/lib/bulldog_description/__init__.py -> /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog_description
+[1.406s] byte-compiling /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog_description/__init__.py to __init__.cpython-38.pyc
+[1.407s] running install_data
+[1.408s] creating /home/daniel/dev_ws/install/bulldog_description/share/ament_index
+[1.408s] creating /home/daniel/dev_ws/install/bulldog_description/share/ament_index/resource_index
+[1.408s] creating /home/daniel/dev_ws/install/bulldog_description/share/ament_index/resource_index/packages
+[1.408s] copying resource/bulldog_description -> /home/daniel/dev_ws/install/bulldog_description/share/ament_index/resource_index/packages
+[1.408s] copying package.xml -> /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description
+[1.408s] running install_egg_info
+[1.410s] Copying ../../build/bulldog_description/bulldog_description.egg-info to /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog_description-0.0.0-py3.8.egg-info
+[1.411s] running install_scripts
+[1.427s] writing list of installed files to '/home/daniel/dev_ws/build/bulldog_description/install.log'
+[1.446s] Invoked command in '/home/daniel/dev_ws/src/bulldog_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/bulldog_description/prefix_override:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bulldog_description build --build-base /home/daniel/dev_ws/build/bulldog_description/build install --record /home/daniel/dev_ws/build/bulldog_description/install.log --install-scripts $base/lib/bulldog_description --single-version-externally-managed

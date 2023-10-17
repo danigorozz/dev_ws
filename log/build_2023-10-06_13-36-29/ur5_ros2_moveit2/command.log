@@ -1,0 +1,6 @@
+Invoking command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/daniel/dev_ws/src/ur5_ros2_moveit2 -DCMAKE_INSTALL_PREFIX=/home/daniel/dev_ws/install/ur5_ros2_moveit2
+Invoked command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/daniel/dev_ws/src/ur5_ros2_moveit2 -DCMAKE_INSTALL_PREFIX=/home/daniel/dev_ws/install/ur5_ros2_moveit2
+Invoking command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/ur5_ros2_moveit2 -- -j8 -l8
+Invoked command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/ur5_ros2_moveit2 -- -j8 -l8
+Invoking command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/ur5_ros2_moveit2
+Invoked command in '/home/daniel/dev_ws/build/ur5_ros2_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/ur5_ros2_moveit2

@@ -4,7 +4,6 @@
 /home/daniel/dev_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
 /home/daniel/dev_ws/install/articubot_one/share/articubot_one/description/robot_base.xacro
 /home/daniel/dev_ws/install/articubot_one/share/articubot_one/description/robot_essentials.xacro
-/home/daniel/dev_ws/install/articubot_one/share/articubot_one/launch/base_gazebo_control_xacro.launch
 /home/daniel/dev_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
 /home/daniel/dev_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py
 /home/daniel/dev_ws/install/articubot_one/share/articubot_one/worlds/empty.world
