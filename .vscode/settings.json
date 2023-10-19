@@ -3,5 +3,6 @@
         "/home/daniel/dev_ws/build/my_doosan_pkg",
         "/home/daniel/dev_ws/install/my_doosan_pkg/lib/python3.8/site-packages",
         "/opt/ros/foxy/lib/python3.8/site-packages"
-    ]
+    ],
+    "ros.distro": "foxy"
 }

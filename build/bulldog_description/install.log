@@ -8,11 +8,14 @@
 /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/meshes/top_plate.stl
 /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/meshes/base_link.stl
 /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/meshes/wheel.stl
+/home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/rviz/view_config.rviz
 /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/urdf/bulldog_robot.xacro
 /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/urdf/accessories/plates.urdf.xacro
 /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/urdf/bulldog/materials.xacro
+/home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/urdf/bulldog/inertial_macros.xacro
 /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/urdf/bulldog/wheel.urdf.xacro
 /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/urdf/bulldog/bulldog.urdf.xacro
+/home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/urdf/bulldog/gazebo_control.xacro
 /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog_description-0.0.0-py3.8.egg-info/dependency_links.txt
 /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog_description-0.0.0-py3.8.egg-info/top_level.txt
 /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog_description-0.0.0-py3.8.egg-info/zip-safe

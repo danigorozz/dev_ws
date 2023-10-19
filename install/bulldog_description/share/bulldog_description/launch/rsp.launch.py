@@ -21,6 +21,7 @@ def generate_launch_description():
     pkg_path = os.path.join(get_package_share_directory(package_name))
     xacro_file = os.path.join(pkg_path, 'urdf', 'bulldog_robot.xacro')
     robot_description_config = xacro.process_file(xacro_file)
+    # robot_description_config = xacro.process_file(xacro_file, mappings={"ur5_enabled": "true"})
     
     # Create a robot_state_publisher node
     params = {'robot_description': robot_description_config.toxml(), 'use_sim_time': use_sim_time}
@@ -31,6 +32,23 @@ def generate_launch_description():
         parameters=[params]
     )
 
+    # Rviz
+    rviz_config_file = os.path.join(get_package_share_directory(package_name), 'rviz', 'view_config.rviz')
+    rviz_node = Node(
+        package = 'rviz2',
+        executable= 'rviz2',
+        name= 'rviz2',
+        arguments=['-d', rviz_config_file]
+    )
+
+    # Joint State Publisher Gui
+    gui_node = Node(
+        package = 'joint_state_publisher_gui',
+        executable= 'joint_state_publisher_gui',
+        name = 'joint_state_publisher_gui',
+        output = 'screen'
+    )
+
 
     # Launch!
     return LaunchDescription([
@@ -39,5 +57,7 @@ def generate_launch_description():
             default_value='false',
             description='Use sim time if true'),
 
-        node_robot_state_publisher
+        node_robot_state_publisher,
+        rviz_node,
+        gui_node
     ])

@@ -1,0 +1,19 @@
+[1.279s] Invoking command in '/home/daniel/dev_ws/build/bulldog_description': PYTHONPATH=/home/daniel/dev_ws/build/bulldog_description/prefix_override:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/bulldog_description/build --no-deps install_data
+[1.533s] running develop
+[1.696s] running egg_info
+[1.696s] writing bulldog_description.egg-info/PKG-INFO
+[1.696s] writing dependency_links to bulldog_description.egg-info/dependency_links.txt
+[1.696s] writing entry points to bulldog_description.egg-info/entry_points.txt
+[1.696s] writing requirements to bulldog_description.egg-info/requires.txt
+[1.696s] writing top-level names to bulldog_description.egg-info/top_level.txt
+[1.728s] reading manifest file 'bulldog_description.egg-info/SOURCES.txt'
+[1.729s] writing manifest file 'bulldog_description.egg-info/SOURCES.txt'
+[1.768s] running build_ext
+[1.768s] Creating /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog-description.egg-link (link to .)
+[1.769s] 
+[1.769s] Installed /home/daniel/dev_ws/build/bulldog_description
+[1.769s] running install_data
+[1.769s] copying launch/rsp.launch.py -> /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/launch
+[1.770s] creating /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/rviz
+[1.770s] copying rviz/view_config.rviz -> /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/rviz
+[1.795s] Invoked command in '/home/daniel/dev_ws/build/bulldog_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/bulldog_description/prefix_override:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/bulldog_description/build --no-deps install_data

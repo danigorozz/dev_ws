@@ -1,0 +1,78 @@
+[1.087s] Invoking command in '/home/daniel/dev_ws/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake /home/daniel/dev_ws/src/ur5_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/daniel/dev_ws/install/ur5_description
+[2.660s] -- The C compiler identification is GNU 9.4.0
+[3.124s] -- The CXX compiler identification is GNU 9.4.0
+[3.215s] -- Check for working C compiler: /usr/bin/cc
+[3.342s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.344s] -- Detecting C compiler ABI info
+[3.454s] -- Detecting C compiler ABI info - done
+[3.476s] -- Detecting C compile features
+[3.477s] -- Detecting C compile features - done
+[3.482s] -- Check for working CXX compiler: /usr/bin/c++
+[3.564s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.566s] -- Detecting CXX compiler ABI info
+[3.645s] -- Detecting CXX compiler ABI info - done
+[3.659s] -- Detecting CXX compile features
+[3.660s] -- Detecting CXX compile features - done
+[3.719s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.858s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.859s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.047s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.250s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.516s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.545s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.549s] -- Added test 'lint_cmake' to check CMake code style
+[4.552s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.561s] -- Added test 'xmllint' to check XML markup files
+[4.572s] -- Configuring done
+[4.579s] -- Generating done
+[4.581s] -- Build files have been written to: /home/daniel/dev_ws/build/ur5_description
+[4.588s] Invoked command in '/home/daniel/dev_ws/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake /home/daniel/dev_ws/src/ur5_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/daniel/dev_ws/install/ur5_description
+[4.593s] Invoking command in '/home/daniel/dev_ws/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/ur5_description -- -j8 -l8
+[4.634s] Invoked command in '/home/daniel/dev_ws/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/ur5_description -- -j8 -l8
+[4.668s] Invoking command in '/home/daniel/dev_ws/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/ur5_description
+[4.677s] -- Install configuration: ""
+[4.677s] -- Execute custom install script
+[4.678s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/default_kinematics.yaml
+[4.687s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/initial_positions.yaml
+[4.696s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/joint_limits.yaml
+[4.705s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/physical_parameters.yaml
+[4.714s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/ur5_controller.yaml
+[4.723s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/visual_parameters.yaml
+[4.732s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/launch/rsp.launch.py
+[4.741s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/launch/ur5_simulation.launch.py
+[4.750s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/urdf/ur5.urdf.xacro
+[4.759s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/urdf/ur5_common.xacro
+[4.769s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/urdf/ur5_macro.urdf.xacro
+[4.778s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/urdf/ur5_ros2control.xacro
+[4.787s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/urdf/ur5_transmission.xacro
+[4.796s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/worlds/ur5.world
+[4.806s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/base.stl
+[4.815s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/forearm.stl
+[4.824s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/shoulder.stl
+[4.833s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/upperarm.stl
+[4.842s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/wrist1.stl
+[4.851s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/wrist2.stl
+[4.860s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/wrist3.stl
+[4.870s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/base.dae
+[4.878s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/forearm.dae
+[4.887s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/shoulder.dae
+[4.896s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/upperarm.dae
+[4.906s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/wrist1.dae
+[4.915s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/wrist2.dae
+[4.924s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/wrist3.dae
+[4.933s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ament_index/resource_index/package_run_dependencies/ur5_description
+[4.943s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ament_index/resource_index/parent_prefix_path/ur5_description
+[4.952s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/environment/ament_prefix_path.sh
+[4.961s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/environment/ament_prefix_path.dsv
+[4.971s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/environment/path.sh
+[4.983s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/environment/path.dsv
+[4.993s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/local_setup.bash
+[5.002s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/local_setup.sh
+[5.011s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/local_setup.zsh
+[5.020s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/local_setup.dsv
+[5.029s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/package.dsv
+[5.038s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ament_index/resource_index/packages/ur5_description
+[5.048s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig.cmake
+[5.056s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig-version.cmake
+[5.066s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/package.xml
+[5.077s] Invoked command in '/home/daniel/dev_ws/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/ur5_description

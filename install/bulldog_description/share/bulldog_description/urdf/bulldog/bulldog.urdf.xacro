@@ -3,6 +3,8 @@
 
   <xacro:include filename="$(find bulldog_description)/urdf/bulldog/wheel.urdf.xacro" />
   <xacro:include filename="$(find bulldog_description)/urdf/bulldog/materials.xacro" />
+  <xacro:include filename="$(find bulldog_description)/urdf/bulldog/gazebo_control.xacro" />
+  <xacro:include filename="$(find bulldog_description)/urdf/bulldog/inertial_macros.xacro" />
   <!--xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro" />
   <xacro:include filename="$(find lms1xx)/urdf/sick_lms1xx.urdf.xacro" /-->
 
@@ -19,7 +21,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://bulldog_description/meshes/base_link.stl" />
+        <mesh filename="file:///$(find bulldog_description)/meshes/base_link.stl" />
       </geometry>
       <material name="flat_black" />
     </visual>
@@ -40,6 +42,9 @@
       <origin xyz="0 0 0.1" />
       <inertia ixx="0.7" ixy="-0.03" ixz="-0.15" iyy="2" iyz="-0.01" izz="4" />
     </inertial>
+    <!-- <xacro:inertial_box mass="40" x="${base_x_size}" y="${base_y_size}" z="${base_z_size}">
+        <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    </xacro:inertial_box> -->
   </link>
   <joint name="inertial_joint" type="fixed">
     <origin xyz="0 0 0" rpy="0 0 0" />
@@ -51,7 +56,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://bulldog_description/meshes/top_plate.stl" />
+        <mesh filename="file:///$(find bulldog_description)/meshes/top_plate.stl" />
       </geometry>
       <material name="grey" />
     </visual>
@@ -95,7 +100,7 @@
     <origin xyz="-0.27937 -0.285 0.0435" rpy="0 0 0" />
   </xacro:bulldog_wheel>
 
-  <!--xacro:if value="$(arg ur5_enabled)">
+  <!-- <xacro:if value="$(arg ur5_enabled)">
     <xacro:installation_plate />
     <xacro:ur5_robot prefix="ur5_arm_" joint_limited="true"/>
     <joint name="ur5_arm_base" type="fixed">
@@ -103,9 +108,9 @@
       <child link="ur5_arm_base_link" />
       <origin xyz="0 0 0.005" rpy="0 0 0" />
     </joint>
-  </xacro:if>
+  </xacro:if> -->
 
-  <xacro:if value="$(arg laser_enabled)">
+  <!-- <xacro:if value="$(arg laser_enabled)">
     <xacro:installation_plate />
     <xacro:laser_plate />
     <sick_lms1xx frame="laser_link" topic="scan"/>
@@ -114,7 +119,7 @@
       <parent link="laser_plate_link" />
       <child link="laser_link" />
     </joint>
-  </xacro:if-->
+  </xacro:if> -->
 
   </xacro:macro>
 </robot>

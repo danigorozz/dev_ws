@@ -6,7 +6,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://bulldog_description/meshes/installation_plate.stl" />
+          <mesh filename="file:///$(find bulldog_description)/meshes/installation_plate.stl" />
         </geometry>
         <material name="black" />
       </visual>
@@ -26,7 +26,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://bulldog_description/meshes/laser_plate.stl" />
+          <mesh filename="file:///$(find bulldog_description)/meshes/laser_plate.stl" />
         </geometry>
         <material name="black" />
       </visual>

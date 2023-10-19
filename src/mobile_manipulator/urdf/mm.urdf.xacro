@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot name="mobile_manipulator" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:arg name="laser_enabled" default="false" />
+    <xacro:arg name="arm_enabled" default="true" />
+
+    <xacro:include filename="$(find bulldog_description)/urdf/bulldog/bulldog.urdf.xacro" />
+    <xacro:include filename="$(find bulldog_description)/urdf/accessories/plates.urdf.xacro" />
+    
+
+    <xacro:bulldog_robot />
+
+    <xacro:if value="$(arg arm_enabled)">
+        <xacro:include filename="$(find doosan_description)/description/xacro/a0912.urdf.xacro" />
+        <xacro:installation_plate />
+        <joint name="arm_base" type="fixed">
+            <parent link="installation_plate_link" />
+            <child link="base_0" />
+            <origin xyz="0 0 0.005" rpy="0 0 0" />
+        </joint>
+    </xacro:if>
+
+    <xacro:if value="$(arg laser_enabled)">
+        <xacro:laser_plate />
+        <!-- <sick_lms1xx frame="laser_link" topic="scan"/> -->
+        <!-- <joint name="laser_mount_joint" type="fixed">
+        <origin xyz="0.015 0 0.044" rpy="${M_PI} 0 0" />
+        <parent link="laser_plate_link" />
+        <child link="laser_link" />
+        </joint> -->
+    </xacro:if>
+
+
+</robot>

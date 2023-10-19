@@ -1,0 +1,35 @@
+[1.857s] Invoking command in '/home/daniel/dev_ws/build/robot_description': PYTHONPATH=/home/daniel/dev_ws/build/robot_description/prefix_override:/home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/robot_description/build --no-deps install_data
+[2.100s] running develop
+[2.258s] running egg_info
+[2.258s] writing robot_description.egg-info/PKG-INFO
+[2.259s] writing dependency_links to robot_description.egg-info/dependency_links.txt
+[2.259s] writing entry points to robot_description.egg-info/entry_points.txt
+[2.259s] writing requirements to robot_description.egg-info/requires.txt
+[2.259s] writing top-level names to robot_description.egg-info/top_level.txt
+[2.291s] reading manifest file 'robot_description.egg-info/SOURCES.txt'
+[2.305s] writing manifest file 'robot_description.egg-info/SOURCES.txt'
+[2.340s] running build_ext
+[2.340s] Creating /home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages/site.py
+[2.345s] Creating /home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages/robot-description.egg-link (link to .)
+[2.345s] 
+[2.345s] Installed /home/daniel/dev_ws/build/robot_description
+[2.345s] running install_data
+[2.345s] creating /home/daniel/dev_ws/install/robot_description/share/ament_index
+[2.345s] creating /home/daniel/dev_ws/install/robot_description/share/ament_index/resource_index
+[2.345s] creating /home/daniel/dev_ws/install/robot_description/share/ament_index/resource_index/packages
+[2.345s] copying resource/robot_description -> /home/daniel/dev_ws/install/robot_description/share/ament_index/resource_index/packages
+[2.346s] copying package.xml -> /home/daniel/dev_ws/install/robot_description/share/robot_description
+[2.346s] creating /home/daniel/dev_ws/install/robot_description/share/robot_description/launch
+[2.346s] copying launch/launch_sim.launch.py -> /home/daniel/dev_ws/install/robot_description/share/robot_description/launch
+[2.346s] copying launch/rsp.launch.py -> /home/daniel/dev_ws/install/robot_description/share/robot_description/launch
+[2.346s] creating /home/daniel/dev_ws/install/robot_description/share/robot_description/meshes
+[2.346s] creating /home/daniel/dev_ws/install/robot_description/share/robot_description/meshes/base
+[2.346s] copying meshes/base/laser_plate.stl -> /home/daniel/dev_ws/install/robot_description/share/robot_description/meshes/base
+[2.356s] copying meshes/base/installation_plate.stl -> /home/daniel/dev_ws/install/robot_description/share/robot_description/meshes/base
+[2.356s] copying meshes/base/top_plate.stl -> /home/daniel/dev_ws/install/robot_description/share/robot_description/meshes/base
+[2.357s] copying meshes/base/base_link.stl -> /home/daniel/dev_ws/install/robot_description/share/robot_description/meshes/base
+[2.411s] copying meshes/base/wheel.stl -> /home/daniel/dev_ws/install/robot_description/share/robot_description/meshes/base
+[2.481s] creating /home/daniel/dev_ws/install/robot_description/share/robot_description/description
+[2.481s] creating /home/daniel/dev_ws/install/robot_description/share/robot_description/description/base
+[2.482s] copying description/base/bulldog_robot.xacro -> /home/daniel/dev_ws/install/robot_description/share/robot_description/description/base
+[2.568s] Invoked command in '/home/daniel/dev_ws/build/robot_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/robot_description/prefix_override:/home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/robot_description/build --no-deps install_data

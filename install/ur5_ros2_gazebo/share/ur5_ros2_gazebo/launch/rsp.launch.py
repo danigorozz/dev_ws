@@ -1,0 +1,1 @@
+/home/daniel/dev_ws/src/ur5_ros2_gazebo/launch/rsp.launch.py

@@ -1,0 +1,16 @@
+[1.884s] Invoking command in '/home/daniel/dev_ws/build/robot_description': PYTHONPATH=/home/daniel/dev_ws/build/robot_description/prefix_override:/home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/robot_description/build --no-deps install_data
+[2.111s] running develop
+[2.272s] running egg_info
+[2.272s] writing robot_description.egg-info/PKG-INFO
+[2.272s] writing dependency_links to robot_description.egg-info/dependency_links.txt
+[2.272s] writing entry points to robot_description.egg-info/entry_points.txt
+[2.272s] writing requirements to robot_description.egg-info/requires.txt
+[2.272s] writing top-level names to robot_description.egg-info/top_level.txt
+[2.304s] reading manifest file 'robot_description.egg-info/SOURCES.txt'
+[2.305s] writing manifest file 'robot_description.egg-info/SOURCES.txt'
+[2.340s] running build_ext
+[2.341s] Creating /home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages/robot-description.egg-link (link to .)
+[2.342s] 
+[2.342s] Installed /home/daniel/dev_ws/build/robot_description
+[2.342s] running install_data
+[2.373s] Invoked command in '/home/daniel/dev_ws/build/robot_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/robot_description/prefix_override:/home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/robot_description/build --no-deps install_data

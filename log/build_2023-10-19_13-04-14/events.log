@@ -1,0 +1,105 @@
+[0.000000] (-) TimerEvent: {}
+[0.000206] (-) JobUnselected: {'identifier': 'bulldog_description'}
+[0.000268] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.000314] (-) JobUnselected: {'identifier': 'ur5_ros2_gazebo'}
+[0.000348] (doosan_description) JobQueued: {'identifier': 'doosan_description', 'dependencies': OrderedDict()}
+[0.000381] (doosan_description) JobStarted: {'identifier': 'doosan_description'}
+[0.099195] (-) TimerEvent: {}
+[0.200006] (-) TimerEvent: {}
+[0.300542] (-) TimerEvent: {}
+[0.402025] (-) TimerEvent: {}
+[0.502525] (-) TimerEvent: {}
+[0.604227] (-) TimerEvent: {}
+[0.705789] (-) TimerEvent: {}
+[0.807005] (-) TimerEvent: {}
+[0.908437] (-) TimerEvent: {}
+[1.008891] (-) TimerEvent: {}
+[1.109200] (-) TimerEvent: {}
+[1.209507] (-) TimerEvent: {}
+[1.281477] (doosan_description) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/daniel/dev_ws/build/doosan_description/build', '--no-deps', 'install_data'], 'cwd': '/home/daniel/dev_ws/build/doosan_description', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'daniel', 'SSH_AGENT_PID': '1962', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/daniel/workspaces/tfm_ws/install/ros2_data/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/daniel', 'OLDPWD': '/home/daniel', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1743', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '5598', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/daniel/workspaces/tfm_ws/install:/home/daniel/dev_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'daniel', 'JOURNAL_STREAM': '8:49424', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'daniel', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/daniel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/dev:@/tmp/.ICE-unix/1997,unix/dev:/tmp/.ICE-unix/1997', 'INVOCATION_ID': 'd360e95bcc86418db516c122e789e117', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/daniel/workspaces/tfm_ws/install/ur5_ros2_moveit2:/home/daniel/workspaces/tfm_ws/install/ur5_ros2_gazebo:/home/daniel/workspaces/tfm_ws/install/ros2_actions:/home/daniel/workspaces/tfm_ws/install/ros2_data:/home/daniel/workspaces/tfm_ws/install/robot_motion:/home/daniel/workspaces/tfm_ws/install/robot_description:/home/daniel/workspaces/tfm_ws/install/mir_description_2:/home/daniel/workspaces/tfm_ws/install/mir_description:/home/daniel/workspaces/tfm_ws/install/articubot_one:/home/daniel/dev_ws/install/ur5_description:/home/daniel/dev_ws/install/robot_description:/home/daniel/dev_ws/install/ur5_ros2_gazebo:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/bulldog_description:/home/daniel/dev_ws/install/articubot_one:/opt/ros/foxy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:42e2660a-0b90-40af-9b00-84f5d002c5da', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/daniel/dev_ws/build/doosan_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:/home/daniel/workspaces/tfm_ws/install/ros2_data/lib/python3.8/site-packages:/home/daniel/workspaces/tfm_ws/install/robot_motion/lib/python3.8/site-packages:/home/daniel/workspaces/tfm_ws/install/robot_description/lib/python3.8/site-packages:/home/daniel/workspaces/tfm_ws/install/mir_description_2/lib/python3.8/site-packages:/home/daniel/workspaces/tfm_ws/install/mir_description/lib/python3.8/site-packages:/home/daniel/dev_ws/build/robot_description:/home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages:/home/daniel/dev_ws/build/my_doosan_pkg:/home/daniel/dev_ws/install/my_doosan_pkg/lib/python3.8/site-packages:/home/daniel/dev_ws/build/bulldog_description:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/daniel/workspaces/tfm_ws/install/ur5_ros2_moveit2:/home/daniel/workspaces/tfm_ws/install/ur5_ros2_gazebo:/home/daniel/workspaces/tfm_ws/install/ros2_actions:/home/daniel/workspaces/tfm_ws/install/ros2_data:/home/daniel/workspaces/tfm_ws/install/articubot_one:/home/daniel/dev_ws/install/ur5_description:/home/daniel/dev_ws/install/ur5_ros2_gazebo:/home/daniel/dev_ws/install/articubot_one'}, 'shell': False}
+[1.309677] (-) TimerEvent: {}
+[1.410106] (-) TimerEvent: {}
+[1.510409] (-) TimerEvent: {}
+[1.547233] (doosan_description) StdoutLine: {'line': b'running develop\n'}
+[1.610511] (-) TimerEvent: {}
+[1.706774] (doosan_description) StdoutLine: {'line': b'running egg_info\n'}
+[1.706974] (doosan_description) StdoutLine: {'line': b'creating doosan_description.egg-info\n'}
+[1.707102] (doosan_description) StdoutLine: {'line': b'writing doosan_description.egg-info/PKG-INFO\n'}
+[1.707290] (doosan_description) StdoutLine: {'line': b'writing dependency_links to doosan_description.egg-info/dependency_links.txt\n'}
+[1.707555] (doosan_description) StdoutLine: {'line': b'writing entry points to doosan_description.egg-info/entry_points.txt\n'}
+[1.707717] (doosan_description) StdoutLine: {'line': b'writing requirements to doosan_description.egg-info/requires.txt\n'}
+[1.707826] (doosan_description) StdoutLine: {'line': b'writing top-level names to doosan_description.egg-info/top_level.txt\n'}
+[1.708752] (doosan_description) StdoutLine: {'line': b"writing manifest file 'doosan_description.egg-info/SOURCES.txt'\n"}
+[1.710569] (-) TimerEvent: {}
+[1.739353] (doosan_description) StdoutLine: {'line': b"reading manifest file 'doosan_description.egg-info/SOURCES.txt'\n"}
+[1.740297] (doosan_description) StdoutLine: {'line': b"writing manifest file 'doosan_description.egg-info/SOURCES.txt'\n"}
+[1.773598] (doosan_description) StdoutLine: {'line': b'running build_ext\n'}
+[1.773940] (doosan_description) StdoutLine: {'line': b'Creating /home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages/site.py\n'}
+[1.776027] (doosan_description) StdoutLine: {'line': b'Creating /home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages/doosan-description.egg-link (link to .)\n'}
+[1.776837] (doosan_description) StdoutLine: {'line': b'Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description\n'}
+[1.777020] (doosan_description) StdoutLine: {'line': b'Installing trajectory_points_topic script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description\n'}
+[1.777319] (doosan_description) StdoutLine: {'line': b'\n'}
+[1.777627] (doosan_description) StdoutLine: {'line': b'Installed /home/daniel/dev_ws/build/doosan_description\n'}
+[1.777831] (doosan_description) StdoutLine: {'line': b'running install_data\n'}
+[1.778002] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/ament_index\n'}
+[1.778177] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/ament_index/resource_index\n'}
+[1.778367] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/ament_index/resource_index/packages\n'}
+[1.778620] (doosan_description) StdoutLine: {'line': b'copying resource/doosan_description -> /home/daniel/dev_ws/install/doosan_description/share/ament_index/resource_index/packages\n'}
+[1.778806] (doosan_description) StdoutLine: {'line': b'copying package.xml -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description\n'}
+[1.778972] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/launch\n'}
+[1.779137] (doosan_description) StdoutLine: {'line': b'copying launch/my_doosan_gazebo_controller.launch.py -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/launch\n'}
+[1.779365] (doosan_description) StdoutLine: {'line': b'copying launch/my_doosan_gazebo.launch.py -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/launch\n'}
+[1.779559] (doosan_description) StdoutLine: {'line': b'copying launch/my_doosan_controller.launch.py -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/launch\n'}
+[1.779731] (doosan_description) StdoutLine: {'line': b'copying launch/my_doosan_rviz.launch.py -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/launch\n'}
+[1.779904] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/rviz\n'}
+[1.780055] (doosan_description) StdoutLine: {'line': b'copying rviz/view_config.rviz -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/rviz\n'}
+[1.780249] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/config\n'}
+[1.780356] (doosan_description) StdoutLine: {'line': b'copying config/simple_controller.yaml -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/config\n'}
+[1.780461] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/worlds\n'}
+[1.780566] (doosan_description) StdoutLine: {'line': b'copying worlds/my_empty_world.world -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/worlds\n'}
+[1.780727] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description\n'}
+[1.780839] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/urdf\n'}
+[1.780945] (doosan_description) StdoutLine: {'line': b'copying description/urdf/m1013.white.urdf -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/urdf\n'}
+[1.781051] (doosan_description) StdoutLine: {'line': b'copying description/urdf/a0912.blue.urdf -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/urdf\n'}
+[1.781218] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro\n'}
+[1.781351] (doosan_description) StdoutLine: {'line': b'copying description/xacro/macro.a0912.blue.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro\n'}
+[1.781470] (doosan_description) StdoutLine: {'line': b'copying description/xacro/m1013.urdf.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro\n'}
+[1.781551] (doosan_description) StdoutLine: {'line': b'copying description/xacro/macro.bumper_config.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro\n'}
+[1.781705] (doosan_description) StdoutLine: {'line': b'copying description/xacro/macro.m1013.white.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro\n'}
+[1.781812] (doosan_description) StdoutLine: {'line': b'copying description/xacro/macro.gazebo_config_control.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro\n'}
+[1.781930] (doosan_description) StdoutLine: {'line': b'copying description/xacro/a0912.urdf.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro\n'}
+[1.782036] (doosan_description) StdoutLine: {'line': b'copying description/xacro/macro.internal_config.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro\n'}
+[1.782163] (doosan_description) StdoutLine: {'line': b'copying description/xacro/macro.transmission.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro\n'}
+[1.782254] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes\n'}
+[1.782382] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.782448] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_2_2.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.782511] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_3_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.782574] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_1_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.782636] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_3_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.782698] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_2_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.782848] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_6_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.782955] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_0_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.783257] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_2_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.784675] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_4_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.785336] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_4_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.785848] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_5_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.786997] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_5_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.787328] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_1_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.788078] (doosan_description) StdoutLine: {'line': b'copying description/meshes/a0912_blue/A0912_1_2.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue\n'}
+[1.788493] (doosan_description) StdoutLine: {'line': b'creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white\n'}
+[1.788850] (doosan_description) StdoutLine: {'line': b'copying description/meshes/m1013_white/MF1013_2_2.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white\n'}
+[1.789519] (doosan_description) StdoutLine: {'line': b'copying description/meshes/m1013_white/MF1013_5_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white\n'}
+[1.790111] (doosan_description) StdoutLine: {'line': b'copying description/meshes/m1013_white/MF1013_0_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white\n'}
+[1.791168] (doosan_description) StdoutLine: {'line': b'copying description/meshes/m1013_white/MF1013_2_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white\n'}
+[1.792797] (doosan_description) StdoutLine: {'line': b'copying description/meshes/m1013_white/MF1013_2_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white\n'}
+[1.793682] (doosan_description) StdoutLine: {'line': b'copying description/meshes/m1013_white/MF1013_6_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white\n'}
+[1.794014] (doosan_description) StdoutLine: {'line': b'copying description/meshes/m1013_white/MF1013_1_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white\n'}
+[1.794833] (doosan_description) StdoutLine: {'line': b'copying description/meshes/m1013_white/MF1013_4_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white\n'}
+[1.795485] (doosan_description) StdoutLine: {'line': b'copying description/meshes/m1013_white/MF1013_3_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white\n'}
+[1.796286] (doosan_description) StdoutLine: {'line': b'copying description/meshes/m1013_white/MF1013_4_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white\n'}
+[1.810683] (-) TimerEvent: {}
+[1.822669] (doosan_description) CommandEnded: {'returncode': 0}
+[1.911100] (-) TimerEvent: {}
+[2.012190] (-) TimerEvent: {}
+[2.031712] (doosan_description) JobEnded: {'identifier': 'doosan_description', 'rc': 0}
+[2.032565] (-) EventReactorShutdown: {}

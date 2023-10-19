@@ -1,0 +1,16 @@
+[2.719s] Invoking command in '/home/daniel/dev_ws/build/mobile_manipulator': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data
+[3.002s] running develop
+[3.174s] running egg_info
+[3.174s] writing mobile_manipulator.egg-info/PKG-INFO
+[3.174s] writing dependency_links to mobile_manipulator.egg-info/dependency_links.txt
+[3.175s] writing entry points to mobile_manipulator.egg-info/entry_points.txt
+[3.175s] writing requirements to mobile_manipulator.egg-info/requires.txt
+[3.175s] writing top-level names to mobile_manipulator.egg-info/top_level.txt
+[3.210s] reading manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[3.210s] writing manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[3.251s] running build_ext
+[3.252s] Creating /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile-manipulator.egg-link (link to .)
+[3.253s] 
+[3.253s] Installed /home/daniel/dev_ws/build/mobile_manipulator
+[3.253s] running install_data
+[3.490s] Invoked command in '/home/daniel/dev_ws/build/mobile_manipulator' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data

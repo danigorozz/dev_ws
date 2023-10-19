@@ -1,0 +1,19 @@
+[3.183s] Invoking command in '/home/daniel/dev_ws/build/doosan_description': PYTHONPATH=/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/doosan_description/build --no-deps install_data
+[3.459s] running develop
+[3.636s] running egg_info
+[3.636s] writing doosan_description.egg-info/PKG-INFO
+[3.637s] writing dependency_links to doosan_description.egg-info/dependency_links.txt
+[3.637s] writing entry points to doosan_description.egg-info/entry_points.txt
+[3.637s] writing requirements to doosan_description.egg-info/requires.txt
+[3.637s] writing top-level names to doosan_description.egg-info/top_level.txt
+[3.671s] reading manifest file 'doosan_description.egg-info/SOURCES.txt'
+[3.673s] writing manifest file 'doosan_description.egg-info/SOURCES.txt'
+[3.710s] running build_ext
+[3.710s] Creating /home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages/doosan-description.egg-link (link to .)
+[3.711s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description
+[3.712s] Installing trajectory_points_topic script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description
+[3.712s] 
+[3.712s] Installed /home/daniel/dev_ws/build/doosan_description
+[3.712s] running install_data
+[3.712s] copying description/xacro/macro.gazebo_config_control.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[3.966s] Invoked command in '/home/daniel/dev_ws/build/doosan_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/doosan_description/build --no-deps install_data

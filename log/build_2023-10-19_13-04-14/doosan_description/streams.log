@@ -1,0 +1,77 @@
+[1.283s] Invoking command in '/home/daniel/dev_ws/build/doosan_description': PYTHONPATH=/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/doosan_description/build --no-deps install_data
+[1.547s] running develop
+[1.707s] running egg_info
+[1.707s] creating doosan_description.egg-info
+[1.707s] writing doosan_description.egg-info/PKG-INFO
+[1.707s] writing dependency_links to doosan_description.egg-info/dependency_links.txt
+[1.707s] writing entry points to doosan_description.egg-info/entry_points.txt
+[1.707s] writing requirements to doosan_description.egg-info/requires.txt
+[1.708s] writing top-level names to doosan_description.egg-info/top_level.txt
+[1.708s] writing manifest file 'doosan_description.egg-info/SOURCES.txt'
+[1.739s] reading manifest file 'doosan_description.egg-info/SOURCES.txt'
+[1.740s] writing manifest file 'doosan_description.egg-info/SOURCES.txt'
+[1.773s] running build_ext
+[1.774s] Creating /home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages/site.py
+[1.776s] Creating /home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages/doosan-description.egg-link (link to .)
+[1.777s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description
+[1.777s] Installing trajectory_points_topic script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description
+[1.777s] 
+[1.777s] Installed /home/daniel/dev_ws/build/doosan_description
+[1.778s] running install_data
+[1.778s] creating /home/daniel/dev_ws/install/doosan_description/share/ament_index
+[1.778s] creating /home/daniel/dev_ws/install/doosan_description/share/ament_index/resource_index
+[1.778s] creating /home/daniel/dev_ws/install/doosan_description/share/ament_index/resource_index/packages
+[1.778s] copying resource/doosan_description -> /home/daniel/dev_ws/install/doosan_description/share/ament_index/resource_index/packages
+[1.779s] copying package.xml -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description
+[1.779s] creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/launch
+[1.779s] copying launch/my_doosan_gazebo_controller.launch.py -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/launch
+[1.779s] copying launch/my_doosan_gazebo.launch.py -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/launch
+[1.779s] copying launch/my_doosan_controller.launch.py -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/launch
+[1.779s] copying launch/my_doosan_rviz.launch.py -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/launch
+[1.780s] creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/rviz
+[1.780s] copying rviz/view_config.rviz -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/rviz
+[1.780s] creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/config
+[1.780s] copying config/simple_controller.yaml -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/config
+[1.780s] creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/worlds
+[1.780s] copying worlds/my_empty_world.world -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/worlds
+[1.780s] creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description
+[1.781s] creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/urdf
+[1.781s] copying description/urdf/m1013.white.urdf -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/urdf
+[1.781s] copying description/urdf/a0912.blue.urdf -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/urdf
+[1.781s] creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[1.781s] copying description/xacro/macro.a0912.blue.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[1.781s] copying description/xacro/m1013.urdf.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[1.781s] copying description/xacro/macro.bumper_config.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[1.781s] copying description/xacro/macro.m1013.white.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[1.782s] copying description/xacro/macro.gazebo_config_control.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[1.782s] copying description/xacro/a0912.urdf.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[1.782s] copying description/xacro/macro.internal_config.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[1.782s] copying description/xacro/macro.transmission.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[1.782s] creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes
+[1.782s] creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.782s] copying description/meshes/a0912_blue/A0912_2_2.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.782s] copying description/meshes/a0912_blue/A0912_3_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.782s] copying description/meshes/a0912_blue/A0912_1_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.782s] copying description/meshes/a0912_blue/A0912_3_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.782s] copying description/meshes/a0912_blue/A0912_2_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.783s] copying description/meshes/a0912_blue/A0912_6_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.783s] copying description/meshes/a0912_blue/A0912_0_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.783s] copying description/meshes/a0912_blue/A0912_2_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.784s] copying description/meshes/a0912_blue/A0912_4_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.785s] copying description/meshes/a0912_blue/A0912_4_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.786s] copying description/meshes/a0912_blue/A0912_5_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.787s] copying description/meshes/a0912_blue/A0912_5_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.787s] copying description/meshes/a0912_blue/A0912_1_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.788s] copying description/meshes/a0912_blue/A0912_1_2.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/a0912_blue
+[1.788s] creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white
+[1.789s] copying description/meshes/m1013_white/MF1013_2_2.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white
+[1.789s] copying description/meshes/m1013_white/MF1013_5_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white
+[1.790s] copying description/meshes/m1013_white/MF1013_0_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white
+[1.791s] copying description/meshes/m1013_white/MF1013_2_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white
+[1.793s] copying description/meshes/m1013_white/MF1013_2_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white
+[1.793s] copying description/meshes/m1013_white/MF1013_6_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white
+[1.794s] copying description/meshes/m1013_white/MF1013_1_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white
+[1.795s] copying description/meshes/m1013_white/MF1013_4_1.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white
+[1.795s] copying description/meshes/m1013_white/MF1013_3_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white
+[1.796s] copying description/meshes/m1013_white/MF1013_4_0.dae -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/m1013_white
+[1.823s] Invoked command in '/home/daniel/dev_ws/build/doosan_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/doosan_description/build --no-deps install_data

@@ -16,11 +16,14 @@ meshes/laser_plate.stl
 meshes/top_plate.stl
 meshes/wheel.stl
 resource/bulldog_description
+rviz/view_config.rviz
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 urdf/bulldog_robot.xacro
 urdf/accessories/plates.urdf.xacro
 urdf/bulldog/bulldog.urdf.xacro
+urdf/bulldog/gazebo_control.xacro
+urdf/bulldog/inertial_macros.xacro
 urdf/bulldog/materials.xacro
 urdf/bulldog/wheel.urdf.xacro

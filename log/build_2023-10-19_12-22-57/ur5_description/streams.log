@@ -1,0 +1,49 @@
+[1.071s] Invoking command in '/home/daniel/dev_ws/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/ur5_description -- -j8 -l8
+[1.116s] Invoked command in '/home/daniel/dev_ws/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/ur5_description -- -j8 -l8
+[1.153s] Invoking command in '/home/daniel/dev_ws/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/ur5_description
+[1.162s] -- Install configuration: ""
+[1.163s] -- Execute custom install script
+[1.163s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/default_kinematics.yaml
+[1.164s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/initial_positions.yaml
+[1.164s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/joint_limits.yaml
+[1.164s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/physical_parameters.yaml
+[1.164s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/ur5_controller.yaml
+[1.164s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/config/visual_parameters.yaml
+[1.165s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/launch/rsp.launch.py
+[1.165s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/launch/ur5_simulation.launch.py
+[1.165s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/urdf/ur5.urdf.xacro
+[1.166s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/urdf/ur5_common.xacro
+[1.166s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/urdf/ur5_macro.urdf.xacro
+[1.166s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/urdf/ur5_ros2control.xacro
+[1.166s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/urdf/ur5_transmission.xacro
+[1.167s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/worlds/ur5.world
+[1.167s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/base.stl
+[1.167s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/forearm.stl
+[1.167s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/shoulder.stl
+[1.168s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/upperarm.stl
+[1.168s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/wrist1.stl
+[1.168s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/wrist2.stl
+[1.168s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/collision/wrist3.stl
+[1.168s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/base.dae
+[1.168s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/forearm.dae
+[1.169s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/shoulder.dae
+[1.169s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/upperarm.dae
+[1.169s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/wrist1.dae
+[1.169s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/wrist2.dae
+[1.169s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/meshes/visual/wrist3.dae
+[1.170s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ament_index/resource_index/package_run_dependencies/ur5_description
+[1.170s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ament_index/resource_index/parent_prefix_path/ur5_description
+[1.170s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/environment/ament_prefix_path.sh
+[1.170s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/environment/ament_prefix_path.dsv
+[1.171s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/environment/path.sh
+[1.171s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/environment/path.dsv
+[1.171s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/local_setup.bash
+[1.172s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/local_setup.sh
+[1.172s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/local_setup.zsh
+[1.172s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/local_setup.dsv
+[1.172s] -- Symlinking: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/package.dsv
+[1.186s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ament_index/resource_index/packages/ur5_description
+[1.186s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig.cmake
+[1.187s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig-version.cmake
+[1.187s] -- Up-to-date symlink: /home/daniel/dev_ws/install/ur5_description/share/ur5_description/package.xml
+[1.193s] Invoked command in '/home/daniel/dev_ws/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/ur5_description

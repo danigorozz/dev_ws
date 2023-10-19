@@ -1,0 +1,18 @@
+[1.292s] Invoking command in '/home/daniel/dev_ws/build/mobile_manipulator': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data
+[1.556s] running develop
+[1.718s] running egg_info
+[1.718s] writing mobile_manipulator.egg-info/PKG-INFO
+[1.719s] writing dependency_links to mobile_manipulator.egg-info/dependency_links.txt
+[1.719s] writing entry points to mobile_manipulator.egg-info/entry_points.txt
+[1.719s] writing requirements to mobile_manipulator.egg-info/requires.txt
+[1.719s] writing top-level names to mobile_manipulator.egg-info/top_level.txt
+[1.751s] reading manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[1.752s] writing manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[1.788s] running build_ext
+[1.788s] Creating /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile-manipulator.egg-link (link to .)
+[1.789s] 
+[1.789s] Installed /home/daniel/dev_ws/build/mobile_manipulator
+[1.790s] running install_data
+[1.790s] creating /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/rviz
+[1.790s] copying rviz/view_config.rviz -> /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/rviz
+[1.815s] Invoked command in '/home/daniel/dev_ws/build/mobile_manipulator' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data

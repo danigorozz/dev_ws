@@ -15,6 +15,7 @@ setup(
 
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*.launch.py'))),
         (os.path.join('share', package_name, 'meshes'), glob(os.path.join('meshes','*.stl'))),
+        (os.path.join('share', package_name, 'rviz'), glob(os.path.join('rviz', '*.rviz'))),  
         (os.path.join('share', package_name, 'urdf'), glob(os.path.join('urdf','*.xacro'))),
         (os.path.join('share', package_name, 'urdf', 'accessories'), glob(os.path.join('urdf', 'accessories', '*'))),
         (os.path.join('share', package_name, 'urdf', 'bulldog'), glob(os.path.join('urdf', 'bulldog', '*'))),
