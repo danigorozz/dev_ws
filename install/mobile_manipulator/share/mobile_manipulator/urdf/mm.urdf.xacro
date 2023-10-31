@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="mobile_manipulator" xmlns:xacro="http://ros.org/wiki/xacro">
 
-    <xacro:arg name="laser_enabled" default="false" />
+    <!-- <xacro:arg name="laser_enabled" default="false" /> -->
     <xacro:arg name="arm_enabled" default="true" />
 
     <xacro:include filename="$(find bulldog_description)/urdf/bulldog/bulldog.urdf.xacro" />
@@ -20,15 +20,86 @@
         </joint>
     </xacro:if>
 
-    <xacro:if value="$(arg laser_enabled)">
+    <!-- <xacro:if value="$(arg laser_enabled)">
         <xacro:laser_plate />
-        <!-- <sick_lms1xx frame="laser_link" topic="scan"/> -->
-        <!-- <joint name="laser_mount_joint" type="fixed">
+        <sick_lms1xx frame="laser_link" topic="scan"/>
+        <joint name="laser_mount_joint" type="fixed">
         <origin xyz="0.015 0 0.044" rpy="${M_PI} 0 0" />
         <parent link="laser_plate_link" />
         <child link="laser_link" />
-        </joint> -->
-    </xacro:if>
+        </joint>
+    </xacro:if> -->
+
+    <!-- LASER -->
+    <link name="laser_link">
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.1 0.1 0.1"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.05 0.05 0.05"/>
+            </geometry>
+        </visual>
+        <inertial>
+            <mass value="1e-5" />
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+        </inertial>
+    </link>
+
+    <joint name="laser_joint" type="fixed">
+        <axis xyz="0 1 0" />
+        <origin xyz="0.430 0 0.20" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="laser_link"/>
+    </joint>
+
+    <gazebo reference="laser_link">
+        <sensor type="ray" name="laser">
+            <pose>0 0 0 0 0 0</pose>
+            <visualize>true</visualize>
+            <update_rate>10</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>720</samples>
+                        <resolution>1</resolution>
+                        <min_angle>-1.570796</min_angle>
+                        <max_angle>1.570796</max_angle>
+                    </horizontal>
+                </scan>
+                <range>
+                    <min>0.30</min>
+                    <max>12.0</max>
+                    <!-- <resolution>0.01</resolution> -->
+                </range>
+            </ray>
+            <!-- <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+                <topicName>/scan</topicName>
+                <frameName>laser_link</frameName>
+            </plugin> -->
+            <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <argument>~/out:=scan</argument>
+                </ros>
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>laser_link</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+    <!-- BASE FOOTPRINT-->
+    <joint name="base_footprint_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="base_footprint" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+
+    <link name="base_footprint"/>
 
 
 </robot>

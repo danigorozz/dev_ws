@@ -31,26 +31,28 @@
         <box size="${base_x_size} ${base_y_size} ${base_z_size}"/>
       </geometry>
     </collision>
-  </link>
-  <gazebo reference="base_link">
-    <material>Gazebo/FlatBlack</material>
-  </gazebo>
-
-  <link name="inertial_link">
     <inertial>
       <mass value="40" />
       <origin xyz="0 0 0.1" />
       <inertia ixx="0.7" ixy="-0.03" ixz="-0.15" iyy="2" iyz="-0.01" izz="4" />
     </inertial>
-    <!-- <xacro:inertial_box mass="40" x="${base_x_size}" y="${base_y_size}" z="${base_z_size}">
-        <origin xyz="0 0 0.1" rpy="0 0 0"/>
-    </xacro:inertial_box> -->
+  </link>
+  <gazebo reference="base_link">
+    <material>Gazebo/FlatBlack</material>
+  </gazebo>
+
+  <!-- <link name="inertial_link">
+    <inertial>
+      <mass value="40" />
+      <origin xyz="0 0 0.1" />
+      <inertia ixx="0.7" ixy="-0.03" ixz="-0.15" iyy="2" iyz="-0.01" izz="4" />
+    </inertial>
   </link>
   <joint name="inertial_joint" type="fixed">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="inertial_link" />
-  </joint>
+  </joint> -->
 
   <link name="top_plate_link">
     <visual>
@@ -71,21 +73,21 @@
     <child link="top_plate_link" />
   </joint>
 
-  <link name="imu_link"/>
+  <!-- <link name="imu_link"/>
   <joint name="imu_joint" type="fixed">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="imu_link" />
   </joint>
-  <gazebo reference="imu_link" />
+  <gazebo reference="imu_link" /> -->
 
-  <link name="rslidar"/>
+  <!-- <link name="rslidar"/>
   <joint name="rslidar_joint" type="fixed">
     <origin xyz="-0.045 0 0.6" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="rslidar" />
   </joint>
-  <gazebo reference="rslidar" />
+  <gazebo reference="rslidar" /> -->
 
   <xacro:bulldog_wheel wheel_prefix="front_left">
     <origin xyz="0.27937 0.285 0.0435" rpy="0 0 0" />

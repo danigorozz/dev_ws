@@ -6,7 +6,12 @@
 /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/launch/view_rviz.launch.py
 /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/launch/rsp.launch.py
 /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/rviz/view_config.rviz
+/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/rviz/laser_config.rviz
 /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/urdf/mm.urdf.xacro
+/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/worlds/factory.world
+/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/worlds/warehouse.world
+/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/worlds/warehouse2.world
+/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/config/mapper_params_online_async.yaml
 /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator-0.0.0-py3.8.egg-info/dependency_links.txt
 /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator-0.0.0-py3.8.egg-info/top_level.txt
 /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator-0.0.0-py3.8.egg-info/zip-safe

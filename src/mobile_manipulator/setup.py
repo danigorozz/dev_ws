@@ -17,6 +17,8 @@ setup(
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*.launch.py'))),
         (os.path.join('share', package_name, 'rviz'), glob(os.path.join('rviz', '*.rviz'))),
         (os.path.join('share', package_name, 'urdf'), glob(os.path.join('urdf', '*.xacro'))),
+        (os.path.join('share', package_name, 'worlds'), glob(os.path.join('worlds', '*.world'))),
+        (os.path.join('share', package_name, 'config'), glob(os.path.join('config', '*.yaml'))),
         
     ],
     install_requires=['setuptools'],
