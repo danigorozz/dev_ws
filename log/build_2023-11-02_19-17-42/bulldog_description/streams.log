@@ -1,0 +1,26 @@
+[3.055s] Invoking command in '/home/daniel/dev_ws/build/bulldog_description': PYTHONPATH=/home/daniel/dev_ws/build/bulldog_description/prefix_override:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/daniel/dev_ws/build/bulldog_description/build
+[3.332s] running develop
+[3.505s] Removing /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog-description.egg-link (link to .)
+[3.532s] Invoked command in '/home/daniel/dev_ws/build/bulldog_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/bulldog_description/prefix_override:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/daniel/dev_ws/build/bulldog_description/build
+[3.535s] Invoking command in '/home/daniel/dev_ws/src/bulldog_description': PYTHONPATH=/home/daniel/dev_ws/build/bulldog_description/prefix_override:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bulldog_description build --build-base /home/daniel/dev_ws/build/bulldog_description/build install --record /home/daniel/dev_ws/build/bulldog_description/install.log --install-scripts $base/lib/bulldog_description --single-version-externally-managed
+[3.794s] running egg_info
+[3.795s] writing ../../build/bulldog_description/bulldog_description.egg-info/PKG-INFO
+[3.795s] writing dependency_links to ../../build/bulldog_description/bulldog_description.egg-info/dependency_links.txt
+[3.796s] writing entry points to ../../build/bulldog_description/bulldog_description.egg-info/entry_points.txt
+[3.796s] writing requirements to ../../build/bulldog_description/bulldog_description.egg-info/requires.txt
+[3.796s] writing top-level names to ../../build/bulldog_description/bulldog_description.egg-info/top_level.txt
+[3.832s] reading manifest file '../../build/bulldog_description/bulldog_description.egg-info/SOURCES.txt'
+[3.834s] writing manifest file '../../build/bulldog_description/bulldog_description.egg-info/SOURCES.txt'
+[3.834s] running build
+[3.834s] running build_py
+[3.834s] running install
+[3.835s] running install_lib
+[3.837s] creating /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog_description
+[3.837s] copying /home/daniel/dev_ws/build/bulldog_description/build/lib/bulldog_description/__init__.py -> /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog_description
+[3.838s] byte-compiling /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog_description/__init__.py to __init__.cpython-38.pyc
+[3.839s] running install_data
+[3.840s] running install_egg_info
+[3.842s] Copying ../../build/bulldog_description/bulldog_description.egg-info to /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog_description-0.0.0-py3.8.egg-info
+[3.843s] running install_scripts
+[3.862s] writing list of installed files to '/home/daniel/dev_ws/build/bulldog_description/install.log'
+[3.886s] Invoked command in '/home/daniel/dev_ws/src/bulldog_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/bulldog_description/prefix_override:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bulldog_description build --build-base /home/daniel/dev_ws/build/bulldog_description/build install --record /home/daniel/dev_ws/build/bulldog_description/install.log --install-scripts $base/lib/bulldog_description --single-version-externally-managed

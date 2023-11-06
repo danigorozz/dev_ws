@@ -1,0 +1,19 @@
+[4.457s] Invoking command in '/home/daniel/dev_ws/build/mobile_manipulator': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data
+[4.740s] running develop
+[4.920s] running egg_info
+[4.921s] writing mobile_manipulator.egg-info/PKG-INFO
+[4.921s] writing dependency_links to mobile_manipulator.egg-info/dependency_links.txt
+[4.921s] writing entry points to mobile_manipulator.egg-info/entry_points.txt
+[4.921s] writing requirements to mobile_manipulator.egg-info/requires.txt
+[4.921s] writing top-level names to mobile_manipulator.egg-info/top_level.txt
+[5.086s] reading manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[5.090s] writing manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[5.156s] running build_ext
+[5.169s] Creating /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile-manipulator.egg-link (link to .)
+[5.170s] Installing send_goal_pose_action script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[5.170s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[5.171s] 
+[5.171s] Installed /home/daniel/dev_ws/build/mobile_manipulator
+[5.171s] running install_data
+[5.171s] error: can't copy 'launch/launch_sim.launch.py': doesn't exist or not a regular file
+[5.419s] Invoked command in '/home/daniel/dev_ws/build/mobile_manipulator' returned '1': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data

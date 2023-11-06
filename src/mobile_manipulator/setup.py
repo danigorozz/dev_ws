@@ -30,6 +30,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'trajectory_points_act_server = mobile_manipulator.joint_points_act_service:main',
+            'send_goal_pose_action = mobile_manipulator.send_goal_pose_action:main',
+            'get_path_action = mobile_manipulator.get_path_action:main',
         ],
     },
 )

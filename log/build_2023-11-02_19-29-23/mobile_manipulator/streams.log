@@ -1,0 +1,22 @@
+[2.485s] Invoking command in '/home/daniel/dev_ws/src/mobile_manipulator': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_manipulator build --build-base /home/daniel/dev_ws/build/mobile_manipulator/build install --record /home/daniel/dev_ws/build/mobile_manipulator/install.log --install-scripts $base/lib/mobile_manipulator --single-version-externally-managed
+[2.766s] running egg_info
+[2.767s] writing ../../build/mobile_manipulator/mobile_manipulator.egg-info/PKG-INFO
+[2.767s] writing dependency_links to ../../build/mobile_manipulator/mobile_manipulator.egg-info/dependency_links.txt
+[2.767s] writing entry points to ../../build/mobile_manipulator/mobile_manipulator.egg-info/entry_points.txt
+[2.767s] writing requirements to ../../build/mobile_manipulator/mobile_manipulator.egg-info/requires.txt
+[2.767s] writing top-level names to ../../build/mobile_manipulator/mobile_manipulator.egg-info/top_level.txt
+[2.816s] reading manifest file '../../build/mobile_manipulator/mobile_manipulator.egg-info/SOURCES.txt'
+[2.818s] writing manifest file '../../build/mobile_manipulator/mobile_manipulator.egg-info/SOURCES.txt'
+[2.818s] running build
+[2.818s] running build_py
+[2.818s] running install
+[2.820s] running install_lib
+[2.822s] running install_data
+[2.823s] copying launch/navigation.launch.py -> /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/launch
+[2.824s] running install_egg_info
+[2.827s] removing '/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator-0.0.0-py3.8.egg-info' (and everything under it)
+[2.827s] Copying ../../build/mobile_manipulator/mobile_manipulator.egg-info to /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator-0.0.0-py3.8.egg-info
+[2.828s] running install_scripts
+[2.851s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[2.852s] writing list of installed files to '/home/daniel/dev_ws/build/mobile_manipulator/install.log'
+[3.207s] Invoked command in '/home/daniel/dev_ws/src/mobile_manipulator' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_manipulator build --build-base /home/daniel/dev_ws/build/mobile_manipulator/build install --record /home/daniel/dev_ws/build/mobile_manipulator/install.log --install-scripts $base/lib/mobile_manipulator --single-version-externally-managed

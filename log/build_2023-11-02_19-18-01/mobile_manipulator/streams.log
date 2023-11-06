@@ -1,0 +1,18 @@
+[2.608s] Invoking command in '/home/daniel/dev_ws/build/mobile_manipulator': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data
+[2.906s] running develop
+[3.099s] running egg_info
+[3.100s] writing mobile_manipulator.egg-info/PKG-INFO
+[3.101s] writing dependency_links to mobile_manipulator.egg-info/dependency_links.txt
+[3.103s] writing entry points to mobile_manipulator.egg-info/entry_points.txt
+[3.104s] writing requirements to mobile_manipulator.egg-info/requires.txt
+[3.105s] writing top-level names to mobile_manipulator.egg-info/top_level.txt
+[3.137s] reading manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[3.138s] writing manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[3.180s] running build_ext
+[3.182s] Creating /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile-manipulator.egg-link (link to .)
+[3.182s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[3.183s] 
+[3.183s] Installed /home/daniel/dev_ws/build/mobile_manipulator
+[3.184s] running install_data
+[3.185s] error: can't copy 'launch/launch_sim.launch.py': doesn't exist or not a regular file
+[3.223s] Invoked command in '/home/daniel/dev_ws/build/mobile_manipulator' returned '1': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data

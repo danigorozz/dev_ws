@@ -1,0 +1,22 @@
+[3.583s] Invoking command in '/home/daniel/dev_ws/src/doosan_description': PYTHONPATH=/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/doosan_description build --build-base /home/daniel/dev_ws/build/doosan_description/build install --record /home/daniel/dev_ws/build/doosan_description/install.log --install-scripts $base/lib/doosan_description --single-version-externally-managed
+[3.967s] running egg_info
+[3.968s] writing ../../build/doosan_description/doosan_description.egg-info/PKG-INFO
+[3.969s] writing dependency_links to ../../build/doosan_description/doosan_description.egg-info/dependency_links.txt
+[3.969s] writing entry points to ../../build/doosan_description/doosan_description.egg-info/entry_points.txt
+[3.969s] writing requirements to ../../build/doosan_description/doosan_description.egg-info/requires.txt
+[3.969s] writing top-level names to ../../build/doosan_description/doosan_description.egg-info/top_level.txt
+[4.015s] reading manifest file '../../build/doosan_description/doosan_description.egg-info/SOURCES.txt'
+[4.017s] writing manifest file '../../build/doosan_description/doosan_description.egg-info/SOURCES.txt'
+[4.018s] running build
+[4.018s] running build_py
+[4.018s] running install
+[4.020s] running install_lib
+[4.021s] running install_data
+[4.022s] running install_egg_info
+[4.025s] removing '/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages/doosan_description-0.0.0-py3.8.egg-info' (and everything under it)
+[4.027s] Copying ../../build/doosan_description/doosan_description.egg-info to /home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages/doosan_description-0.0.0-py3.8.egg-info
+[4.028s] running install_scripts
+[4.055s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description
+[4.055s] Installing trajectory_points_topic script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description
+[4.057s] writing list of installed files to '/home/daniel/dev_ws/build/doosan_description/install.log'
+[4.393s] Invoked command in '/home/daniel/dev_ws/src/doosan_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/doosan_description build --build-base /home/daniel/dev_ws/build/doosan_description/build install --record /home/daniel/dev_ws/build/doosan_description/install.log --install-scripts $base/lib/doosan_description --single-version-externally-managed

@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/mobile_manipulator/mobile_manipulator.egg-info/PKG-INFO
+writing dependency_links to ../../build/mobile_manipulator/mobile_manipulator.egg-info/dependency_links.txt
+writing entry points to ../../build/mobile_manipulator/mobile_manipulator.egg-info/entry_points.txt
+writing requirements to ../../build/mobile_manipulator/mobile_manipulator.egg-info/requires.txt
+writing top-level names to ../../build/mobile_manipulator/mobile_manipulator.egg-info/top_level.txt
+reading manifest file '../../build/mobile_manipulator/mobile_manipulator.egg-info/SOURCES.txt'
+writing manifest file '../../build/mobile_manipulator/mobile_manipulator.egg-info/SOURCES.txt'
+running build
+running build_py
+copying mobile_manipulator/check_point_reachability_act_server.py -> /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator
+running install
+running install_lib
+copying /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator/check_point_reachability_act_server.py -> /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator
+byte-compiling /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator/check_point_reachability_act_server.py to check_point_reachability_act_server.cpython-38.pyc
+running install_data
+copying package.xml -> /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator
+creating /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/action
+copying action/CheckPointReachability.action -> /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/action
+running install_egg_info
+removing '/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/mobile_manipulator/mobile_manipulator.egg-info to /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator-0.0.0-py3.8.egg-info
+running install_scripts
+Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+writing list of installed files to '/home/daniel/dev_ws/build/mobile_manipulator/install.log'

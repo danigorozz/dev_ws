@@ -1,0 +1,18 @@
+[2.437s] Invoking command in '/home/daniel/dev_ws/build/mobile_manipulator': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data
+[2.702s] running develop
+[2.874s] running egg_info
+[2.874s] writing mobile_manipulator.egg-info/PKG-INFO
+[2.874s] writing dependency_links to mobile_manipulator.egg-info/dependency_links.txt
+[2.875s] writing entry points to mobile_manipulator.egg-info/entry_points.txt
+[2.875s] writing requirements to mobile_manipulator.egg-info/requires.txt
+[2.875s] writing top-level names to mobile_manipulator.egg-info/top_level.txt
+[2.909s] reading manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[2.910s] writing manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[2.950s] running build_ext
+[2.950s] Creating /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile-manipulator.egg-link (link to .)
+[2.951s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[2.952s] 
+[2.952s] Installed /home/daniel/dev_ws/build/mobile_manipulator
+[2.952s] running install_data
+[2.952s] copying urdf/mm.urdf.xacro -> /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/urdf
+[3.192s] Invoked command in '/home/daniel/dev_ws/build/mobile_manipulator' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data

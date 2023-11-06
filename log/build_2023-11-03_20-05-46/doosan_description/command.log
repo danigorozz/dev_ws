@@ -1,0 +1,1 @@
+Invoking command in '/home/daniel/dev_ws/build/doosan_description': PYTHONPATH=/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/doosan_description/build --no-deps install_data

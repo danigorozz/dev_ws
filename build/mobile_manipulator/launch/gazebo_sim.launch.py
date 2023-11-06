@@ -1,0 +1,1 @@
+/home/daniel/dev_ws/src/mobile_manipulator/launch/gazebo_sim.launch.py

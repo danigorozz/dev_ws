@@ -1,0 +1,5 @@
+float32[] point
+---
+bool is_reachable
+---
+string feedback_msg

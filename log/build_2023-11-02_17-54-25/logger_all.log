@@ -1,0 +1,180 @@
+[2.742s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-up-to', 'mobile_manipulator', '--symlink-install']
+[2.742s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f643558cb20>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=['mobile_manipulator'], packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f643558cb20>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f64355950a0>)
+[2.864s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.864s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.864s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.864s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.864s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.864s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.864s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/daniel/dev_ws'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.875s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.875s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.875s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.875s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.875s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.875s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.875s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.875s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.876s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.876s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.876s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.876s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.876s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.876s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.876s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.876s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/bulldog_description) by extensions ['ignore', 'ignore_ament_install']
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/bulldog_description) by extension 'ignore'
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/bulldog_description) by extension 'ignore_ament_install'
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/bulldog_description) by extensions ['colcon_pkg']
+[2.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/bulldog_description) by extension 'colcon_pkg'
+[2.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/bulldog_description) by extensions ['colcon_meta']
+[2.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/bulldog_description) by extension 'colcon_meta'
+[2.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/bulldog_description) by extensions ['ros']
+[2.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/bulldog_description) by extension 'ros'
+[2.880s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bulldog_description' with type 'ros.ament_python' and name 'bulldog_description'
+[2.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan_description) by extensions ['ignore', 'ignore_ament_install']
+[2.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan_description) by extension 'ignore'
+[2.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan_description) by extension 'ignore_ament_install'
+[2.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan_description) by extensions ['colcon_pkg']
+[2.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan_description) by extension 'colcon_pkg'
+[2.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan_description) by extensions ['colcon_meta']
+[2.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan_description) by extension 'colcon_meta'
+[2.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan_description) by extensions ['ros']
+[2.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan_description) by extension 'ros'
+[2.881s] DEBUG:colcon.colcon_core.package_identification:Package 'src/doosan_description' with type 'ros.ament_python' and name 'doosan_description'
+[2.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_manipulator) by extensions ['ignore', 'ignore_ament_install']
+[2.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_manipulator) by extension 'ignore'
+[2.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_manipulator) by extension 'ignore_ament_install'
+[2.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_manipulator) by extensions ['colcon_pkg']
+[2.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_manipulator) by extension 'colcon_pkg'
+[2.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_manipulator) by extensions ['colcon_meta']
+[2.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_manipulator) by extension 'colcon_meta'
+[2.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_manipulator) by extensions ['ros']
+[2.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_manipulator) by extension 'ros'
+[2.882s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mobile_manipulator' with type 'ros.ament_python' and name 'mobile_manipulator'
+[2.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_ros2_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[2.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_ros2_gazebo) by extension 'ignore'
+[2.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_ros2_gazebo) by extension 'ignore_ament_install'
+[2.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_ros2_gazebo) by extensions ['colcon_pkg']
+[2.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_ros2_gazebo) by extension 'colcon_pkg'
+[2.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_ros2_gazebo) by extensions ['colcon_meta']
+[2.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_ros2_gazebo) by extension 'colcon_meta'
+[2.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_ros2_gazebo) by extensions ['ros']
+[2.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_ros2_gazebo) by extension 'ros'
+[2.883s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur5_ros2_gazebo' with type 'ros.ament_cmake' and name 'ur5_ros2_gazebo'
+[2.883s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.883s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.883s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.883s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.883s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.042s] INFO:colcon.colcon_core.package_selection:Skipping package 'ur5_ros2_gazebo' in 'src/ur5_ros2_gazebo'
+[3.042s] INFO:colcon.colcon_core.package_selection:Skipping package 'doosan_description' in 'src/doosan_description'
+[3.042s] INFO:colcon.colcon_core.package_selection:Skipping package 'bulldog_description' in 'src/bulldog_description'
+[3.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.229s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/daniel/dev_ws/install
+[3.278s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 376 installed packages in /opt/ros/foxy
+[3.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.473s] Level 5:colcon.colcon_core.verb:set package 'mobile_manipulator' build argument 'cmake_args' from command line to 'None'
+[3.473s] Level 5:colcon.colcon_core.verb:set package 'mobile_manipulator' build argument 'cmake_target' from command line to 'None'
+[3.473s] Level 5:colcon.colcon_core.verb:set package 'mobile_manipulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.473s] Level 5:colcon.colcon_core.verb:set package 'mobile_manipulator' build argument 'cmake_clean_cache' from command line to 'False'
+[3.473s] Level 5:colcon.colcon_core.verb:set package 'mobile_manipulator' build argument 'cmake_clean_first' from command line to 'False'
+[3.473s] Level 5:colcon.colcon_core.verb:set package 'mobile_manipulator' build argument 'cmake_force_configure' from command line to 'False'
+[3.473s] Level 5:colcon.colcon_core.verb:set package 'mobile_manipulator' build argument 'ament_cmake_args' from command line to 'None'
+[3.473s] Level 5:colcon.colcon_core.verb:set package 'mobile_manipulator' build argument 'catkin_cmake_args' from command line to 'None'
+[3.473s] Level 5:colcon.colcon_core.verb:set package 'mobile_manipulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.474s] DEBUG:colcon.colcon_core.verb:Building package 'mobile_manipulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daniel/dev_ws/build/mobile_manipulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daniel/dev_ws/install/mobile_manipulator', 'merge_install': False, 'path': '/home/daniel/dev_ws/src/mobile_manipulator', 'symlink_install': True, 'test_result_base': None}
+[3.519s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.568s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.569s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/daniel/dev_ws/src/mobile_manipulator' with build type 'ament_python'
+[3.569s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobile_manipulator', 'ament_prefix_path')
+[3.621s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/hook/ament_prefix_path.ps1'
+[3.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/hook/ament_prefix_path.dsv'
+[3.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/hook/ament_prefix_path.sh'
+[3.671s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.672s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.068s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/daniel/dev_ws/src/mobile_manipulator'
+[4.119s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.119s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.714s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/ament_index/resource_index/packages/mobile_manipulator
+[4.714s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/package.xml
+[4.714s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/launch/launch_sim_control.launch.py
+[4.714s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/launch/launch_sim.launch.py
+[4.714s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/launch/view_rviz.launch.py
+[4.715s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/launch/rsp.launch.py
+[4.715s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/rviz/view_config.rviz
+[4.715s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/rviz/laser_config.rviz
+[4.715s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/rviz/nav2_config.rviz
+[4.715s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/urdf/mm.urdf.xacro
+[4.715s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/worlds/factory.world
+[4.715s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/worlds/warehouse.world
+[4.715s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/worlds/warehouse2.world
+[4.715s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/config/mapper_params_online_async.yaml
+[4.715s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/config/simple_controller.yaml
+[4.715s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator/trajectory_points_act_server
+[4.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daniel/dev_ws/build/mobile_manipulator': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data
+[5.265s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobile_manipulator', 'pythonpath_develop')
+[5.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daniel/dev_ws/build/mobile_manipulator' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data
+[5.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel/dev_ws/build/mobile_manipulator/share/mobile_manipulator/hook/pythonpath_develop.ps1'
+[5.316s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel/dev_ws/build/mobile_manipulator/share/mobile_manipulator/hook/pythonpath_develop.dsv'
+[5.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel/dev_ws/build/mobile_manipulator/share/mobile_manipulator/hook/pythonpath_develop.sh'
+[5.369s] Level 1:colcon.colcon_core.environment:checking '/home/daniel/dev_ws/install/mobile_manipulator' for CMake module files
+[5.369s] Level 1:colcon.colcon_core.environment:checking '/home/daniel/dev_ws/install/mobile_manipulator' for CMake config files
+[5.370s] Level 1:colcon.colcon_core.environment:checking '/home/daniel/dev_ws/install/mobile_manipulator/lib'
+[5.370s] Level 1:colcon.colcon_core.environment:checking '/home/daniel/dev_ws/install/mobile_manipulator/bin'
+[5.371s] Level 1:colcon.colcon_core.environment:checking '/home/daniel/dev_ws/install/mobile_manipulator/lib/pkgconfig/mobile_manipulator.pc'
+[5.371s] Level 1:colcon.colcon_core.environment:checking '/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages'
+[5.371s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobile_manipulator', 'pythonpath')
+[5.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/hook/pythonpath.ps1'
+[5.421s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/hook/pythonpath.dsv'
+[5.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/hook/pythonpath.sh'
+[5.422s] Level 1:colcon.colcon_core.environment:checking '/home/daniel/dev_ws/install/mobile_manipulator/bin'
+[5.422s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mobile_manipulator)
+[5.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/package.ps1'
+[5.474s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/package.dsv'
+[5.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/package.sh'
+[5.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/package.bash'
+[5.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/package.zsh'
+[5.476s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daniel/dev_ws/install/mobile_manipulator/share/colcon-core/packages/mobile_manipulator)
+[5.477s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.477s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.478s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.478s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.534s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.534s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.534s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.549s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.610s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daniel/dev_ws/install/local_setup.ps1'
+[5.611s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/daniel/dev_ws/install/_local_setup_util_ps1.py'
+[5.613s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daniel/dev_ws/install/setup.ps1'
+[5.664s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daniel/dev_ws/install/local_setup.sh'
+[5.664s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/daniel/dev_ws/install/_local_setup_util_sh.py'
+[5.665s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daniel/dev_ws/install/setup.sh'
+[5.716s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daniel/dev_ws/install/local_setup.bash'
+[5.717s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daniel/dev_ws/install/setup.bash'
+[5.766s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daniel/dev_ws/install/local_setup.zsh'
+[5.767s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daniel/dev_ws/install/setup.zsh'
