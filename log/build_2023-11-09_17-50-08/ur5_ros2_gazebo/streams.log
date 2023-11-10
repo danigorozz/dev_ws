@@ -1,0 +1,48 @@
+[0.211s] Invoking command in '/home/daniel/dev_ws/build/ur5_ros2_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/mobile_manipulator:/home/daniel/dev_ws/install/doosan_description:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/ur5_ros2_gazebo -- -j8 -l8
+[0.505s] Invoked command in '/home/daniel/dev_ws/build/ur5_ros2_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/mobile_manipulator:/home/daniel/dev_ws/install/doosan_description:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --build /home/daniel/dev_ws/build/ur5_ros2_gazebo -- -j8 -l8
+[0.551s] Invoking command in '/home/daniel/dev_ws/build/ur5_ros2_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/mobile_manipulator:/home/daniel/dev_ws/install/doosan_description:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/ur5_ros2_gazebo
+[0.562s] -- Install configuration: ""
+[0.563s] -- Execute custom install script
+[0.564s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/config/default_kinematics.yaml
+[0.577s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/config/initial_positions.yaml
+[0.589s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/config/joint_limits.yaml
+[0.601s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/config/physical_parameters.yaml
+[0.613s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/config/ur5_controller.yaml
+[0.624s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/config/visual_parameters.yaml
+[0.635s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/launch/ur5_simulation.launch.py
+[0.645s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/urdf/ur5.urdf.xacro
+[0.654s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/urdf/ur5_common.xacro
+[0.663s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/urdf/ur5_macro.urdf.xacro
+[0.672s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/urdf/ur5_ros2control.xacro
+[0.682s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/urdf/ur5_transmission.xacro
+[0.691s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/worlds/ur5.world
+[0.701s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/collision/base.stl
+[0.710s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/collision/forearm.stl
+[0.719s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/collision/shoulder.stl
+[0.728s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/collision/upperarm.stl
+[0.737s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/collision/wrist1.stl
+[0.747s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/collision/wrist2.stl
+[0.756s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/collision/wrist3.stl
+[0.765s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/visual/base.dae
+[0.774s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/visual/forearm.dae
+[0.784s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/visual/shoulder.dae
+[0.793s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/visual/upperarm.dae
+[0.802s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/visual/wrist1.dae
+[0.811s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/visual/wrist2.dae
+[0.820s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/meshes/visual/wrist3.dae
+[0.830s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ament_index/resource_index/package_run_dependencies/ur5_ros2_gazebo
+[0.839s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ament_index/resource_index/parent_prefix_path/ur5_ros2_gazebo
+[0.849s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/environment/ament_prefix_path.sh
+[0.858s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/environment/ament_prefix_path.dsv
+[0.867s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/environment/path.sh
+[0.876s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/environment/path.dsv
+[0.884s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/local_setup.bash
+[0.893s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/local_setup.sh
+[0.902s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/local_setup.zsh
+[0.911s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/local_setup.dsv
+[0.920s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/package.dsv
+[0.929s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ament_index/resource_index/packages/ur5_ros2_gazebo
+[0.938s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/cmake/ur5_ros2_gazeboConfig.cmake
+[0.947s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/cmake/ur5_ros2_gazeboConfig-version.cmake
+[0.956s] -- Symlinking: /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/package.xml
+[0.967s] Invoked command in '/home/daniel/dev_ws/build/ur5_ros2_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniel/dev_ws/install/robot_description:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/mobile_manipulator:/home/daniel/dev_ws/install/doosan_description:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy /usr/bin/cmake --install /home/daniel/dev_ws/build/ur5_ros2_gazebo

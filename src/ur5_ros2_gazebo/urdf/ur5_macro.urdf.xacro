@@ -83,8 +83,8 @@
 
     <!-- ***** ur5 ROBOT .urdf SERIAL CHAIN *****-->
     <!-- Links: -->
-    <link name="${prefix}base_link"/>
-    <link name="${prefix}base_link_inertia">
+    <link name="${prefix}base_0"/>
+    <link name="${prefix}base_0_inertia">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
         <geometry>
@@ -226,9 +226,9 @@
     </link>
 
     <!-- Joints: -->
-    <joint name="${prefix}base_link-base_link_inertia" type="fixed">
-      <parent link="${prefix}base_link" />
-      <child link="${prefix}base_link_inertia" />
+    <joint name="${prefix}base_0-base_0_inertia" type="fixed">
+      <parent link="${prefix}base_0" />
+      <child link="${prefix}base_0_inertia" />
       <!-- 'base_link' is REP-103 aligned (so X+ forward), while the internal
            frames of the robot/controller have X+ pointing backwards.
            Use the joint between 'base_link' and 'base_link_inertia' (a dummy
@@ -237,7 +237,7 @@
       <origin xyz="0 0 0" rpy="0 0 ${pi}" />
     </joint>
     <joint name="${prefix}shoulder_pan_joint" type="revolute">
-      <parent link="${prefix}base_link_inertia" />
+      <parent link="${prefix}base_0_inertia" />
       <child link="${prefix}shoulder_link" />
       <origin xyz="${shoulder_x} ${shoulder_y} ${shoulder_z}" rpy="${shoulder_roll} ${shoulder_pitch} ${shoulder_yaw}" />
       <axis xyz="0 0 1" />
@@ -311,14 +311,14 @@
 
     <!-- ROS-Industrial 'base' frame - base_link to UR 'Base' Coordinates transform -->
     <link name="${prefix}base"/>
-    <joint name="${prefix}base_link-base_fixed_joint" type="fixed">
+    <joint name="${prefix}base_0-base_fixed_joint" type="fixed">
       <!-- Note the rotation over Z of pi radians - as base_link is REP-103
            aligned (i.e., has X+ forward, Y+ left and Z+ up), this is needed
            to correctly align 'base' with the 'Base' coordinate system of
            the UR controller.
       -->
       <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
-      <parent link="${prefix}base_link"/>
+      <parent link="${prefix}base_0"/>
       <child link="${prefix}base"/>
     </joint>
 

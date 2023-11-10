@@ -31,8 +31,10 @@ setup(
     entry_points={
         'console_scripts': [
             'trajectory_points_act_server = mobile_manipulator.joint_points_act_service:main',
+            'trajectory_points_from_ik_act_server = mobile_manipulator.joint_points_act_service_from_ik:main',
             'send_goal_pose_action = mobile_manipulator.send_goal_pose_action:main',
             'get_path_action = mobile_manipulator.get_path_action:main',
+            'reach_goal_action = mobile_manipulator.reach_goal_action:main',
         ],
     },
 )

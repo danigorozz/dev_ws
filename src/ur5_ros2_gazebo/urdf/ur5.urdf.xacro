@@ -101,9 +101,9 @@
 
   <!-- CELL LAYOUT N1) UR5 ROBOT alone: -->
   <xacro:if value="${cell_layout_1}">
-    <joint name="world-base_link-fixed" type="fixed">
+    <joint name="world-base_0-fixed" type="fixed">
       <parent link="world"/>
-      <child link="base_link"/>
+      <child link="base_0"/>
     </joint>
   </xacro:if>
 
@@ -142,7 +142,7 @@
     </joint>
     <joint name="ur_joint" type="fixed">
       <parent link="ur_base" />
-      <child link = "base_link" />
+      <child link = "base_0" />
       <origin xyz="0.0 0.0 0.655" rpy="0.0 0.0 0.0" /> 
     </joint>
   </xacro:if>

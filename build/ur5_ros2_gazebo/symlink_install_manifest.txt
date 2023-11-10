@@ -4,7 +4,6 @@
 /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/config/physical_parameters.yaml
 /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/config/ur5_controller.yaml
 /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/config/visual_parameters.yaml
-/home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/launch/rsp.launch.py
 /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/launch/ur5_simulation.launch.py
 /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/urdf/ur5.urdf.xacro
 /home/daniel/dev_ws/install/ur5_ros2_gazebo/share/ur5_ros2_gazebo/urdf/ur5_common.xacro

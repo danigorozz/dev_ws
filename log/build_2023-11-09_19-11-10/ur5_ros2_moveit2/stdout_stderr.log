@@ -1,0 +1,26 @@
+-- Install configuration: ""
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/chomp_planning.yaml
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/ur5.srdf
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/ur5_moveit2.rviz
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/ur5_controllers.yaml
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/ompl_planning.yaml
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/config/kinematics.yaml
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/launch
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/launch/ur5_interface.launch.py
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/launch/ur5.launch.py
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ament_index/resource_index/package_run_dependencies/ur5_ros2_moveit2
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ament_index/resource_index/parent_prefix_path/ur5_ros2_moveit2
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/environment/ament_prefix_path.sh
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/environment/ament_prefix_path.dsv
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/environment/path.sh
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/environment/path.dsv
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/local_setup.bash
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/local_setup.sh
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/local_setup.zsh
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/local_setup.dsv
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/package.dsv
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ament_index/resource_index/packages/ur5_ros2_moveit2
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/cmake/ur5_ros2_moveit2Config.cmake
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/cmake/ur5_ros2_moveit2Config-version.cmake
+-- Installing: /home/daniel/dev_ws/install/ur5_ros2_moveit2/share/ur5_ros2_moveit2/package.xml
