@@ -24,6 +24,9 @@ from trajectory_msgs.msg import JointTrajectoryPoint
 import kinpy as kp
 import numpy as np
 from kinpy.transform import Transform
+import math
+
+# from utils import transform_to_pipi
 
 chain = kp.build_serial_chain_from_urdf(
 	open('/home/daniel/dev_ws/src/dsr_description2/urdf/a0912.blue.urdf').read(), 
@@ -41,13 +44,16 @@ class TrajectoryFromIkActionClient(Node):
 	def send_goal(self):
 
 		points = []
-
-		goal_pose = Transform(rot=np.array([0.0198, 0, 1, 0]), pos=np.array([1, 0.04, 0.07]))
-
-		goal_point = chain.inverse_kinematics(goal_pose)
+		
+		# goal_pose = Transform(rot=np.array([0.0198, 0, 1, 0]), pos=np.array([1, 0.04, 0.07]))
+		goal_pose = Transform(rot=np.array([0, 0, -1, 0]), pos=np.array([0.5, 0.0, -0.2]))
+	
+		goal_point = chain.inverse_kinematics(goal_pose).tolist()
+		goal_point = list(map(self.transform_to_pipi, goal_point))
+		self.get_logger().info(f'Goal configuration with IK: {goal_point}')
 
 		point1_msg = JointTrajectoryPoint()
-		point1_msg.positions = goal_point.tolist()
+		point1_msg.positions = goal_point
 		point1_msg.time_from_start = Duration(seconds=4.0).to_msg()
 
 		points.append(point1_msg)
@@ -87,6 +93,27 @@ class TrajectoryFromIkActionClient(Node):
 		
 	def feedback_callback(self, feedback_msg):
 		feedback = feedback_msg.feedback
+	
+	def truncated_remainder(self, dividend, divisor):
+		divided_number = dividend / divisor
+		divided_number = \
+			-int(-divided_number) if divided_number < 0 else int(divided_number)
+
+		remainder = dividend - divisor * divided_number
+
+		return remainder
+
+	def transform_to_pipi(self, input_angle):
+		revolutions = int((input_angle + np.sign(input_angle) * np.pi) / (2 * np.pi))
+
+		p1 = self.truncated_remainder(input_angle + np.sign(input_angle) * np.pi, 2 * np.pi)
+		p2 = (np.sign(np.sign(input_angle)
+					+ 2 * (np.sign(math.fabs((self.truncated_remainder(input_angle + np.pi, 2 * np.pi))
+										/ (2 * np.pi))) - 1))) * np.pi
+
+		output_angle = p1 - p2
+
+		return output_angle
 
 
 def main(args=None):

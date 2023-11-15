@@ -23,6 +23,7 @@ import kinpy as kp
 import transformations as tf
 from kinpy.transform import Transform
 import numpy as np
+import quaternion
 import math
 from kinpy.transform import Transform
 
@@ -38,7 +39,7 @@ chain = kp.build_serial_chain_from_urdf(
 	"base_0"
 )
 
-DISTANCE_THRESHOLD = 0.6
+DISTANCE_THRESHOLD = 1.0
 
 class ReachGoalAction(Node):
 
@@ -87,7 +88,16 @@ class ReachGoalAction(Node):
 		self.get_logger().info('Navigation completed!')
 
 		######## 3. GET ARM INVERSE KINEMATICS ########
-		goal_pose = Transform(rot=goal_orientation, pos=goal_orientation)
+		goal_pose = Transform(rot=goal_orientation, pos=goal_position)
+
+		# tbl = np.quaternion(0, selected_pose.pose.position.x, selected_pose.pose.position.y, selected_pose.pose.position.z)
+		# qbl = np.quaternion(selected_pose.pose.orientation.w, selected_pose.pose.orientation.x, selected_pose.pose.orientation.y, selected_pose.pose.orientation.z)
+		# pm = np.quaternion(0, goal_position[0], goal_position[1], goal_position[2])
+		# tb = np.quaternion(0, 0.197, 0, 0.314)
+		# qb = np.quaternion(1, 0, 0, 0)
+		
+		# pbl = qbl * pm * np.conjugate(qbl) + tbl
+		# pb = qb * pbl * np.conjugate(qb) + tb
 		# Creamos las matrices para simplificar
 		w_T_bl = self.pose2tranf(Transform(
 			pos=[selected_pose.pose.position.x, selected_pose.pose.position.y, selected_pose.pose.position.z],
@@ -101,26 +111,33 @@ class ReachGoalAction(Node):
 							[0, 0, 1, 0.314],
 							[0, 0, 0, 1]])
 
-		w_T_p = self.pose2tranf(goal_pose)
+		# w_T_p = self.pose2tranf(goal_pose)
+		w_p = np.array([goal_position[0], goal_position[1], goal_position[2], 1]).T
 
-		b_T_p = np.linalg.inv(bl_T_b) @ np.linalg.inv(w_T_bl) @ w_T_p
+		b_T_w = np.linalg.inv(bl_T_b) @ np.linalg.inv(w_T_bl)
+
+		w_p = b_T_w @ w_p
 
 		self.get_logger().info('Calculos realizados!')
 
-		q = tf.quaternion_from_matrix(b_T_p)
+		# q = tf.quaternion_from_matrix(b_T_p)
 		# p = b_T_p[:3,3]
-		p = np.array([0.5, 0.5, 0.0])
+		# p = np.array([0.5, 0.5, 0.0])
 
-		self.get_logger().info(f'Posicion: {p}')
+		self.get_logger().info(f'Posicion relativa: {w_p.T}')
 
-		ik = chain.inverse_kinematics(Transform(pos=p, rot=q))
+		p = w_p.T[:3]
 
-		self.get_logger().info(f'IK calculada! {ik}')
+		ik = chain.inverse_kinematics(Transform(pos=list(p), rot=goal_orientation)).tolist()
+
+		ik = list(map(self.transform_to_pipi, ik))
+
+		# self.get_logger().info(f'IK calculada! {ik}')
 
 		######## 4. MOVE ARM ########
 		self.get_logger().info('Creando mensaje ...')
 		point_msg = JointTrajectoryPoint()
-		point_msg.positions = ik.tolist()
+		point_msg.positions = ik
 		point_msg.time_from_start = Duration(seconds=4.0).to_msg()
 
 		joint_names = ['joint1','joint2','joint3','joint4','joint5','joint6']
@@ -160,8 +177,8 @@ class ReachGoalAction(Node):
 
 
 	def generate_goal(self):
-		position = [4.67, 1.0, 1.0] # [x ,y ,z]
-		orientation = [0.0, 0.0, -1.0, 0.0] # Pointing down [w, x, y, z]
+		position = [4.67, 1.0, 0.1] # [x ,y ,z]
+		orientation = [0.0198, 0, 1, 0] # Pointing down [w, x, y, z]
 		return position, orientation
 
 	def generate_pose_msg_for_path_computing(self, position):
@@ -184,25 +201,25 @@ class ReachGoalAction(Node):
 		Q = pose.rot
 		P = pose.pos
 		# Extract the values from Q
-		q0 = Q[0]
-		q1 = Q[1]
-		q2 = Q[2]
-		q3 = Q[3]
+		qw = Q[0]
+		qx = Q[1]
+		qy = Q[2]
+		qz = Q[3]
 		
 		# First row of the rotation matrix
-		r00 = 2 * (q0 * q0 + q1 * q1) - 1
-		r01 = 2 * (q1 * q2 - q0 * q3)
-		r02 = 2 * (q1 * q3 + q0 * q2)
+		r00 = 1 - 2 * qy*qy + - 2 * qz*qz
+		r01 = 2 * (qx * qy - qw * qz)
+		r02 = 2 * (qx * qz + qy * qw)
 		
 		# Second row of the rotation matrix
-		r10 = 2 * (q1 * q2 + q0 * q3)
-		r11 = 2 * (q0 * q0 + q2 * q2) - 1
-		r12 = 2 * (q2 * q3 - q0 * q1)
+		r10 = 2 * (qx * qy + qz * qw)
+		r11 = 1 - 2 * qx*qx - 2 * qz*qz
+		r12 = 2 * (qy * qz - qx * qw)
 		
 		# Third row of the rotation matrix
-		r20 = 2 * (q1 * q3 - q0 * q2)
-		r21 = 2 * (q2 * q3 + q0 * q1)
-		r22 = 2 * (q0 * q0 + q3 * q3) - 1
+		r20 = 2 * (qx * qz - qy * qw)
+		r21 = 2 * (qy * qz + qx * qw)
+		r22 = 1 - 2 * qx*qx - 2 * qy*qy
 		
 		# 3x3 rotation matrix
 		T = np.array([	[r00, r01, r02, P[0]],
@@ -212,6 +229,27 @@ class ReachGoalAction(Node):
 					])
 								
 		return T
+	
+	def truncated_remainder(self, dividend, divisor):
+		divided_number = dividend / divisor
+		divided_number = \
+			-int(-divided_number) if divided_number < 0 else int(divided_number)
+
+		remainder = dividend - divisor * divided_number
+
+		return remainder
+
+	def transform_to_pipi(self, input_angle):
+		revolutions = int((input_angle + np.sign(input_angle) * np.pi) / (2 * np.pi))
+
+		p1 = self.truncated_remainder(input_angle + np.sign(input_angle) * np.pi, 2 * np.pi)
+		p2 = (np.sign(np.sign(input_angle)
+					+ 2 * (np.sign(math.fabs((self.truncated_remainder(input_angle + np.pi, 2 * np.pi))
+										/ (2 * np.pi))) - 1))) * np.pi
+
+		output_angle = p1 - p2
+
+		return output_angle
 
 def main(args=None):
 
