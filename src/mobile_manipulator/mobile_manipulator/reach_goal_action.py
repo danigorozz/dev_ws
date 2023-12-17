@@ -177,7 +177,7 @@ class ReachGoalAction(Node):
 
 
 	def generate_goal(self):
-		position = [4.67, 1.0, 0.1] # [x ,y ,z]
+		position = [4.67, 1.0, 1.0] # [x ,y ,z]
 		orientation = [0.0198, 0, 1, 0] # Pointing down [w, x, y, z]
 		return position, orientation
 

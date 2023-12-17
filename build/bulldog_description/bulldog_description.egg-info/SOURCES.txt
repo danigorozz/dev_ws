@@ -9,6 +9,13 @@ setup.py
 ../../build/bulldog_description/bulldog_description.egg-info/top_level.txt
 ../../build/bulldog_description/bulldog_description.egg-info/zip-safe
 bulldog_description/__init__.py
+bulldog_description.egg-info/PKG-INFO
+bulldog_description.egg-info/SOURCES.txt
+bulldog_description.egg-info/dependency_links.txt
+bulldog_description.egg-info/entry_points.txt
+bulldog_description.egg-info/requires.txt
+bulldog_description.egg-info/top_level.txt
+bulldog_description.egg-info/zip-safe
 launch/rsp.launch.py
 meshes/base_link.stl
 meshes/installation_plate.stl
@@ -17,9 +24,6 @@ meshes/top_plate.stl
 meshes/wheel.stl
 resource/bulldog_description
 rviz/view_config.rviz
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
 urdf/bulldog_robot.xacro
 urdf/accessories/plates.urdf.xacro
 urdf/bulldog/bulldog.urdf.xacro

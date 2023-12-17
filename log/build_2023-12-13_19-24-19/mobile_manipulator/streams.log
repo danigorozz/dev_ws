@@ -1,0 +1,22 @@
+[1.630s] Invoking command in '/home/daniel/dev_ws/build/mobile_manipulator': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data
+[1.887s] running develop
+[2.056s] running egg_info
+[2.056s] writing mobile_manipulator.egg-info/PKG-INFO
+[2.056s] writing dependency_links to mobile_manipulator.egg-info/dependency_links.txt
+[2.056s] writing entry points to mobile_manipulator.egg-info/entry_points.txt
+[2.057s] writing requirements to mobile_manipulator.egg-info/requires.txt
+[2.057s] writing top-level names to mobile_manipulator.egg-info/top_level.txt
+[2.090s] reading manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[2.092s] writing manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[2.128s] running build_ext
+[2.128s] Creating /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile-manipulator.egg-link (link to .)
+[2.130s] Installing get_path_action script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[2.130s] Installing reach_goal_action script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[2.130s] Installing send_goal_pose_action script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[2.130s] Installing tf_listener script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[2.130s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[2.131s] Installing trajectory_points_from_ik_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[2.131s] 
+[2.131s] Installed /home/daniel/dev_ws/build/mobile_manipulator
+[2.131s] running install_data
+[2.354s] Invoked command in '/home/daniel/dev_ws/build/mobile_manipulator' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data

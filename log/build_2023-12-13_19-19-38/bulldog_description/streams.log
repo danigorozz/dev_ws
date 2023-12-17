@@ -1,0 +1,17 @@
+[1.908s] Invoking command in '/home/daniel/dev_ws/build/bulldog_description': PYTHONPATH=/home/daniel/dev_ws/build/bulldog_description/prefix_override:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/bulldog_description/build --no-deps install_data
+[2.167s] running develop
+[2.335s] running egg_info
+[2.336s] writing bulldog_description.egg-info/PKG-INFO
+[2.336s] writing dependency_links to bulldog_description.egg-info/dependency_links.txt
+[2.336s] writing entry points to bulldog_description.egg-info/entry_points.txt
+[2.336s] writing requirements to bulldog_description.egg-info/requires.txt
+[2.336s] writing top-level names to bulldog_description.egg-info/top_level.txt
+[2.370s] reading manifest file 'bulldog_description.egg-info/SOURCES.txt'
+[2.371s] writing manifest file 'bulldog_description.egg-info/SOURCES.txt'
+[2.407s] running build_ext
+[2.407s] Creating /home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages/bulldog-description.egg-link (link to .)
+[2.408s] 
+[2.408s] Installed /home/daniel/dev_ws/build/bulldog_description
+[2.408s] running install_data
+[2.409s] copying urdf/bulldog/wheel.urdf.xacro -> /home/daniel/dev_ws/install/bulldog_description/share/bulldog_description/urdf/bulldog
+[2.644s] Invoked command in '/home/daniel/dev_ws/build/bulldog_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/bulldog_description/prefix_override:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/bulldog_description/build --no-deps install_data

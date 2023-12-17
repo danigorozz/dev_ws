@@ -34,8 +34,8 @@
 
   <gazebo reference="${wheel_prefix}_wheel_link">
     <mu1 value="1.0"/>
-    <!-- <mu2 value="1.0"/> -->
-    <mu2 value="0.25"/>
+    <mu2 value="0.2"/>
+    <!-- <mu2 value="0.25"/> KEMPES engineers year-book 1985 (90th edition) -->
     <kp value="10000000.0" />
     <kd value="1.0" />
     <fdir1 value="1 0 0"/>

@@ -35,6 +35,7 @@ setup(
             'send_goal_pose_action = mobile_manipulator.send_goal_pose_action:main',
             'get_path_action = mobile_manipulator.get_path_action:main',
             'reach_goal_action = mobile_manipulator.reach_goal_action:main',
+            'tf_listener = mobile_manipulator.tf_listener_node:main',
         ],
     },
 )

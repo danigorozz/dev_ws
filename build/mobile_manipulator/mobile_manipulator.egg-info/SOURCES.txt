@@ -22,6 +22,7 @@ mobile_manipulator/joint_points_act_service.py
 mobile_manipulator/joint_points_act_service_from_ik.py
 mobile_manipulator/reach_goal_action.py
 mobile_manipulator/send_goal_pose_action.py
+mobile_manipulator/tf_listener_node.py
 mobile_manipulator/utils.py
 mobile_manipulator.egg-info/PKG-INFO
 mobile_manipulator.egg-info/SOURCES.txt
