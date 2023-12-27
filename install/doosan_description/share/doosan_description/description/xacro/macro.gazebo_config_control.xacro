@@ -71,6 +71,27 @@
 	    		<state_interface name="velocity"/>
 	    		<state_interface name="effort"/>
 	    	</joint>
+
+			<!-- Prismatic joint for the gripper -->
+			<joint name="gripper_joint_left_1">
+				<command_interface name="position">
+					<param name="min">-0.04</param>
+					<param name="max">0.06</param>
+				</command_interface>
+				<state_interface name="position"/>
+				<state_interface name="velocity"/>
+				<state_interface name="effort"/>
+			</joint>
+			<joint name="gripper_joint_right_1">
+				<command_interface name="position">
+					<param name="min">0.04</param>
+					<param name="max">-0.06</param>
+				</command_interface>
+				<state_interface name="position"/>
+				<state_interface name="velocity"/>
+				<state_interface name="effort"/>
+			</joint> 
+
 	  	</ros2_control>
 
 		<gazebo>

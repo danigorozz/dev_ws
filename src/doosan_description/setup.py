@@ -21,6 +21,7 @@ setup(
         (os.path.join('share', package_name, 'description', 'xacro'), glob(os.path.join('description','xacro', '*.xacro'))),
         (os.path.join('share', package_name, 'description', 'meshes', 'a0912_blue'), glob(os.path.join('description','meshes','a0912_blue', '*.dae'))),
         (os.path.join('share', package_name, 'description', 'meshes', 'm1013_white'), glob(os.path.join('description','meshes','m1013_white', '*.dae'))),
+        (os.path.join('share', package_name, 'description', 'meshes', 'gripper'), glob(os.path.join('description','meshes','gripper', '*.stl'))),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

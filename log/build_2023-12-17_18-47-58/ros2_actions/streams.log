@@ -1,0 +1,64 @@
+[0.753s] Invoking command in '/home/daniel/dev_ws/build/ros2_actions': AMENT_PREFIX_PATH=/home/daniel/dev_ws/install/ros2_data:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/daniel/dev_ws/install/ros2_data:/opt/ros/foxy LD_LIBRARY_PATH=/home/daniel/dev_ws/install/ros2_data/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/daniel/dev_ws/install/ros2_data/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/daniel/dev_ws/build/ros2_actions -- -j8 -l8
+[2.112s] [ 18%] [32m[1mLinking CXX executable moveRP_action[0m
+[2.112s] [ 18%] [32m[1mLinking CXX executable moveJs_action[0m
+[2.112s] [ 18%] [32m[1mLinking CXX executable moveJ_action[0m
+[2.112s] [ 22%] [32m[1mLinking CXX executable moveXYZW_action[0m
+[2.112s] [ 27%] [32m[1mLinking CXX executable moveL_action[0m
+[2.114s] [ 27%] [32m[1mLinking CXX executable moveXYZ_action[0m
+[2.115s] [ 31%] [32m[1mLinking CXX executable moveROT_action[0m
+[2.116s] [ 36%] [32m[1mLinking CXX executable moveG_action[0m
+[13.594s] [ 40%] Built target moveRP_action
+[13.607s] [ 45%] Built target moveJ_action
+[13.623s] [ 50%] Built target moveXYZ_action
+[13.728s] [ 54%] Built target moveG_action
+[13.729s] [ 59%] Built target moveROT_action
+[13.736s] [ 63%] Built target moveL_action
+[13.738s] [ 68%] [32m[1mLinking CXX executable moveR_action[0m
+[13.740s] [ 72%] [32m[1mLinking CXX executable moveRs_action[0m
+[13.742s] [ 77%] [32m[1mLinking CXX executable moveYPR_action[0m
+[13.759s] [ 81%] Built target moveXYZW_action
+[13.762s] [ 86%] Built target moveJs_action
+[14.827s] [ 90%] Built target moveRs_action
+[14.836s] [100%] Built target moveR_action
+[14.836s] [100%] Built target moveYPR_action
+[14.848s] Invoked command in '/home/daniel/dev_ws/build/ros2_actions' returned '0': AMENT_PREFIX_PATH=/home/daniel/dev_ws/install/ros2_data:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/daniel/dev_ws/install/ros2_data:/opt/ros/foxy LD_LIBRARY_PATH=/home/daniel/dev_ws/install/ros2_data/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/daniel/dev_ws/install/ros2_data/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/daniel/dev_ws/build/ros2_actions -- -j8 -l8
+[14.900s] Invoking command in '/home/daniel/dev_ws/build/ros2_actions': AMENT_PREFIX_PATH=/home/daniel/dev_ws/install/ros2_data:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/daniel/dev_ws/install/ros2_data:/opt/ros/foxy LD_LIBRARY_PATH=/home/daniel/dev_ws/install/ros2_data/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/daniel/dev_ws/install/ros2_data/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/daniel/dev_ws/build/ros2_actions
+[14.915s] -- Install configuration: ""
+[14.937s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveJ_action
+[14.938s] -- Set runtime path of "/home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveJ_action" to ""
+[14.955s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveJs_action
+[14.957s] -- Set runtime path of "/home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveJs_action" to ""
+[14.974s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveG_action
+[14.976s] -- Set runtime path of "/home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveG_action" to ""
+[14.995s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveXYZW_action
+[15.000s] -- Set runtime path of "/home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveXYZW_action" to ""
+[15.022s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveL_action
+[15.026s] -- Set runtime path of "/home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveL_action" to ""
+[15.047s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveR_action
+[15.052s] -- Set runtime path of "/home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveR_action" to ""
+[15.076s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveRs_action
+[15.080s] -- Set runtime path of "/home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveRs_action" to ""
+[15.104s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveXYZ_action
+[15.109s] -- Set runtime path of "/home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveXYZ_action" to ""
+[15.124s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveYPR_action
+[15.128s] -- Set runtime path of "/home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveYPR_action" to ""
+[15.140s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveROT_action
+[15.145s] -- Set runtime path of "/home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveROT_action" to ""
+[15.158s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveRP_action
+[15.163s] -- Set runtime path of "/home/daniel/dev_ws/install/ros2_actions/lib/ros2_actions/moveRP_action" to ""
+[15.164s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ament_index/resource_index/package_run_dependencies/ros2_actions
+[15.165s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ament_index/resource_index/parent_prefix_path/ros2_actions
+[15.165s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/environment/ament_prefix_path.sh
+[15.166s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/environment/ament_prefix_path.dsv
+[15.167s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/environment/path.sh
+[15.167s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/environment/path.dsv
+[15.168s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/local_setup.bash
+[15.168s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/local_setup.sh
+[15.168s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/local_setup.zsh
+[15.169s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/local_setup.dsv
+[15.169s] -- Installing: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/package.dsv
+[15.175s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ament_index/resource_index/packages/ros2_actions
+[15.176s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/cmake/ros2_actionsConfig.cmake
+[15.177s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/cmake/ros2_actionsConfig-version.cmake
+[15.177s] -- Up-to-date: /home/daniel/dev_ws/install/ros2_actions/share/ros2_actions/package.xml
+[15.182s] Invoked command in '/home/daniel/dev_ws/build/ros2_actions' returned '0': AMENT_PREFIX_PATH=/home/daniel/dev_ws/install/ros2_data:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/daniel/dev_ws/install/ros2_data:/opt/ros/foxy LD_LIBRARY_PATH=/home/daniel/dev_ws/install/ros2_data/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/daniel/dev_ws/install/ros2_data/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/daniel/dev_ws/build/ros2_actions

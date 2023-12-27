@@ -3,8 +3,8 @@
 
   <!-- <xacro:include filename="$(find bulldog_description)/urdf/bulldog/inertial_macros.xacro" /> -->
 
-  <!-- <xacro:property name="wheel_length" value="0.142" />
-  <xacro:property name="wheel_radius" value="0.183" /> -->
+  <xacro:property name="wheel_length" value="0.142" />
+  <xacro:property name="wheel_radius" value="0.183" />
 
   <xacro:macro name="bulldog_wheel" params="wheel_prefix *joint_pose">
 

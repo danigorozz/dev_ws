@@ -1,0 +1,22 @@
+[2.061s] Invoking command in '/home/daniel/dev_ws/build/doosan_description': PYTHONPATH=/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/doosan_description/build --no-deps install_data
+[2.341s] running develop
+[2.525s] running egg_info
+[2.526s] writing doosan_description.egg-info/PKG-INFO
+[2.526s] writing dependency_links to doosan_description.egg-info/dependency_links.txt
+[2.526s] writing entry points to doosan_description.egg-info/entry_points.txt
+[2.526s] writing requirements to doosan_description.egg-info/requires.txt
+[2.526s] writing top-level names to doosan_description.egg-info/top_level.txt
+[2.565s] reading manifest file 'doosan_description.egg-info/SOURCES.txt'
+[2.566s] writing manifest file 'doosan_description.egg-info/SOURCES.txt'
+[2.602s] running build_ext
+[2.602s] Creating /home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages/doosan-description.egg-link (link to .)
+[2.603s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description
+[2.604s] Installing trajectory_points_topic script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description
+[2.604s] 
+[2.604s] Installed /home/daniel/dev_ws/build/doosan_description
+[2.604s] running install_data
+[2.605s] creating /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/gripper
+[2.606s] copying description/meshes/gripper/gripA_R_1.stl -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/gripper
+[2.627s] copying description/meshes/gripper/gripA_L_1.stl -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/gripper
+[2.627s] copying description/meshes/gripper/gripA_0.stl -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/meshes/gripper
+[2.890s] Invoked command in '/home/daniel/dev_ws/build/doosan_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/doosan_description/build --no-deps install_data

@@ -1,0 +1,56 @@
+[5.773s] Invoking command in '/home/daniel/dev_ws/build/mobile_manipulator': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build
+[6.053s] running develop
+[6.254s] Removing /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile-manipulator.egg-link (link to .)
+[6.474s] Invoked command in '/home/daniel/dev_ws/build/mobile_manipulator' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build
+[6.476s] Invoking command in '/home/daniel/dev_ws/src/mobile_manipulator': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_manipulator build --build-base /home/daniel/dev_ws/build/mobile_manipulator/build install --record /home/daniel/dev_ws/build/mobile_manipulator/install.log --install-scripts $base/lib/mobile_manipulator --single-version-externally-managed
+[6.825s] running egg_info
+[6.825s] writing ../../build/mobile_manipulator/mobile_manipulator.egg-info/PKG-INFO
+[6.825s] writing dependency_links to ../../build/mobile_manipulator/mobile_manipulator.egg-info/dependency_links.txt
+[6.826s] writing entry points to ../../build/mobile_manipulator/mobile_manipulator.egg-info/entry_points.txt
+[6.826s] writing requirements to ../../build/mobile_manipulator/mobile_manipulator.egg-info/requires.txt
+[6.826s] writing top-level names to ../../build/mobile_manipulator/mobile_manipulator.egg-info/top_level.txt
+[6.826s] reading manifest file '../../build/mobile_manipulator/mobile_manipulator.egg-info/SOURCES.txt'
+[6.826s] writing manifest file '../../build/mobile_manipulator/mobile_manipulator.egg-info/SOURCES.txt'
+[6.826s] running build
+[6.826s] running build_py
+[6.826s] copying mobile_manipulator/send_goal_pose_action.py -> /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator
+[6.826s] copying mobile_manipulator/joint_points_act_service_from_ik.py -> /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator
+[6.826s] copying mobile_manipulator/tf_listener_node.py -> /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator
+[6.826s] copying mobile_manipulator/utils.py -> /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator
+[6.827s] copying mobile_manipulator/reach_goal_action.py -> /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator
+[6.827s] running install
+[6.827s] running install_lib
+[6.827s] copying /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator/joint_points_act_service.py -> /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator
+[6.827s] copying /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator/__init__.py -> /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator
+[6.827s] copying /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator/send_goal_pose_action.py -> /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator
+[6.827s] copying /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator/get_path_action.py -> /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator
+[6.827s] copying /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator/joint_points_act_service_from_ik.py -> /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator
+[6.827s] copying /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator/tf_listener_node.py -> /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator
+[6.827s] copying /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator/utils.py -> /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator
+[6.827s] copying /home/daniel/dev_ws/build/mobile_manipulator/build/lib/mobile_manipulator/reach_goal_action.py -> /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator
+[6.827s] byte-compiling /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator/joint_points_act_service.py to joint_points_act_service.cpython-38.pyc
+[6.828s] byte-compiling /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator/__init__.py to __init__.cpython-38.pyc
+[6.828s] byte-compiling /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator/send_goal_pose_action.py to send_goal_pose_action.cpython-38.pyc
+[6.828s] byte-compiling /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator/get_path_action.py to get_path_action.cpython-38.pyc
+[6.828s] byte-compiling /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator/joint_points_act_service_from_ik.py to joint_points_act_service_from_ik.cpython-38.pyc
+[6.828s] byte-compiling /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator/tf_listener_node.py to tf_listener_node.cpython-38.pyc
+[6.828s] byte-compiling /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator/utils.py to utils.cpython-38.pyc
+[6.828s] byte-compiling /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator/reach_goal_action.py to reach_goal_action.cpython-38.pyc
+[6.828s] running install_data
+[6.828s] copying urdf/mm.urdf.xacro -> /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/urdf
+[6.828s] copying urdf/gripper.xacro -> /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/urdf
+[6.829s] creating /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/meshes
+[6.829s] copying meshes/gripA_R_1.stl -> /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/meshes
+[6.829s] copying meshes/gripA_L_1.stl -> /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/meshes
+[6.829s] copying meshes/gripA_0.stl -> /home/daniel/dev_ws/install/mobile_manipulator/share/mobile_manipulator/meshes
+[6.829s] running install_egg_info
+[6.829s] Copying ../../build/mobile_manipulator/mobile_manipulator.egg-info to /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile_manipulator-0.0.0-py3.8.egg-info
+[6.829s] running install_scripts
+[6.841s] Installing get_path_action script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[6.842s] Installing reach_goal_action script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[6.842s] Installing send_goal_pose_action script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[6.843s] Installing tf_listener script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[6.843s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[6.843s] Installing trajectory_points_from_ik_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[6.844s] writing list of installed files to '/home/daniel/dev_ws/build/mobile_manipulator/install.log'
+[7.155s] Invoked command in '/home/daniel/dev_ws/src/mobile_manipulator' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mobile_manipulator build --build-base /home/daniel/dev_ws/build/mobile_manipulator/build install --record /home/daniel/dev_ws/build/mobile_manipulator/install.log --install-scripts $base/lib/mobile_manipulator --single-version-externally-managed

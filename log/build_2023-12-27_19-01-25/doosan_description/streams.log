@@ -1,0 +1,23 @@
+[1.888s] Invoking command in '/home/daniel/dev_ws/build/doosan_description': PYTHONPATH=/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/doosan_description/build --no-deps install_data
+[2.146s] running develop
+[2.317s] running egg_info
+[2.317s] writing doosan_description.egg-info/PKG-INFO
+[2.317s] writing dependency_links to doosan_description.egg-info/dependency_links.txt
+[2.318s] writing entry points to doosan_description.egg-info/entry_points.txt
+[2.318s] writing requirements to doosan_description.egg-info/requires.txt
+[2.318s] writing top-level names to doosan_description.egg-info/top_level.txt
+[2.351s] reading manifest file 'doosan_description.egg-info/SOURCES.txt'
+[2.353s] writing manifest file 'doosan_description.egg-info/SOURCES.txt'
+[2.390s] running build_ext
+[2.391s] Creating /home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages/doosan-description.egg-link (link to .)
+[2.392s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description
+[2.392s] Installing trajectory_points_topic script to /home/daniel/dev_ws/install/doosan_description/lib/doosan_description
+[2.392s] 
+[2.392s] Installed /home/daniel/dev_ws/build/doosan_description
+[2.392s] running install_data
+[2.393s] copying config/simple_controller.yaml -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/config
+[2.393s] copying description/xacro/macro.gazebo_config_control.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[2.393s] copying description/xacro/gripper.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[2.393s] copying description/xacro/macro.internal_config.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[2.394s] copying description/xacro/macro.transmission.xacro -> /home/daniel/dev_ws/install/doosan_description/share/doosan_description/description/xacro
+[2.624s] Invoked command in '/home/daniel/dev_ws/build/doosan_description' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/doosan_description/prefix_override:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/doosan_description/build --no-deps install_data

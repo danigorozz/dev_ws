@@ -36,6 +36,8 @@ class SendGoalPoseActionClient(Node):
 		self.send_goal_future = self.action_client.send_goal_async(goal_msg, feedback_callback=self.feedback_callback)
 		self.send_goal_future.add_done_callback(self.goal_response_callback)
 
+		# self.get_logger().info('Hola')
+
 	
 	def goal_response_callback(self, future):
 		
