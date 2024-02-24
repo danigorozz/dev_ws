@@ -36,10 +36,10 @@ chain = kp.build_serial_chain_from_urdf(
 
 DISTANCE_THRESHOLD = 1.0
 
-class ReachGoalAction(Node):
+class ReachGoalAction2(Node):
 
 	def __init__(self):
-		super().__init__('reach_goal_action')
+		super().__init__('reach_goal_action2')
 
 		self.declare_parameter('goal_point', [4.67, 1.0, 1.0])
 		self.goal_point = self.get_parameter('goal_point').value
@@ -119,13 +119,17 @@ class ReachGoalAction(Node):
 			except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
 				self.get_logger().warn(f"Error looking up transform: {e}")
 
-
 		w_T_bl = self.pose2tranf(Transform(
-			pos=[selected_pose.pose.position.x, selected_pose.pose.position.y, selected_pose.pose.position.z],
-			rot=[selected_pose.pose.orientation.w, 
-				selected_pose.pose.orientation.x, 
-				selected_pose.pose.orientation.y, 
-				selected_pose.pose.orientation.z]
+			pos=[transform_stamped.transform.translation.x, transform_stamped.transform.translation.y, transform_stamped.transform.translation.z],
+			rot=[1.0,
+				# transform_stamped.transform.rotation.w, 
+				0.0,
+				# transform_stamped.transform.rotation.x, 
+				0.0,
+				# transform_stamped.transform.rotation.y, 
+				0.0
+				# transform_stamped.transform.rotation.z
+				]
 		))
 		bl_T_b = np.array([	[1, 0, 0, 0.197],
 							[0, 1, 0, 0],
@@ -139,13 +143,13 @@ class ReachGoalAction(Node):
 
 		w_p = b_T_w @ w_p
 
-		self.get_logger().info('Calculos realizados!')
+		# self.get_logger().info('Calculos realizados!')
 
 		# q = tf.quaternion_from_matrix(b_T_p)
 		# p = b_T_p[:3,3]
 		# p = np.array([0.5, 0.5, 0.0])
 
-		self.get_logger().info(f'Posicion relativa: {w_p.T}')
+		# self.get_logger().info(f'Posicion relativa: {w_p.T}')
 
 		p = w_p.T[:3]
 
@@ -156,7 +160,7 @@ class ReachGoalAction(Node):
 		# self.get_logger().info(f'IK calculada! {ik}')
 
 		######## 4. MOVE ARM ########
-		self.get_logger().info('Creando mensajesdasdsad ...')
+		# self.get_logger().info('Creando mensaje ...')
 		point_msg = JointTrajectoryPoint()
 		point_msg.positions = ik[:6]
 		point_msg.time_from_start = Duration(seconds=4.0).to_msg()
@@ -167,7 +171,7 @@ class ReachGoalAction(Node):
 		goal_msg.trajectory.joint_names = joint_names
 		goal_msg.trajectory.points = [point_msg]
 
-		self.get_logger().info('Enviando ...!')
+		# self.get_logger().info('Enviando ...!')
 
 		send_goal_future = self.joint_trajectory_action_client.send_goal_async(goal_msg)
 		rclpy.spin_until_future_complete(self, send_goal_future)
@@ -190,10 +194,10 @@ class ReachGoalAction(Node):
 				break
 			selected_pose = pose_s
 			reversed_index -= 1
-		if verbose:
-			self.get_logger().info(f'Pose seleccionada en el índice {reversed_index} de {len(path.poses) - 1}')
-			self.get_logger().info(f'Posición: {selected_pose.pose.position}')
-			self.get_logger().info(f'Orientación: {selected_pose.pose.orientation}')
+		# if verbose:
+			# self.get_logger().info(f'Pose seleccionada en el índice {reversed_index} de {len(path.poses) - 1}')
+			# self.get_logger().info(f'Posición: {selected_pose.pose.position}')
+			# self.get_logger().info(f'Orientación: {selected_pose.pose.orientation}')
 		return selected_pose, reversed_index
 
 
@@ -276,7 +280,7 @@ def main(args=None):
 
 	rclpy.init()
 	
-	node = ReachGoalAction()
+	node = ReachGoalAction2()
 	future = node.reach_goal()
 	rclpy.spin_once(node)
 

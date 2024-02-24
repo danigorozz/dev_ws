@@ -19,9 +19,6 @@ from geometry_msgs.msg import PoseStamped, Point
 
 import json
 
-import tf2_ros
-import tf2_geometry_msgs
-
 # chain = kp.build_serial_chain_from_urdf(
 # 	open('/home/daniel/dev_ws/src/dsr_description2/urdf/a0912.blue.urdf').read(), 
 # 	"gripper_link_ee", 
@@ -36,10 +33,10 @@ chain = kp.build_serial_chain_from_urdf(
 
 DISTANCE_THRESHOLD = 1.0
 
-class ReachGoalAction(Node):
+class MoveBothParallel(Node):
 
 	def __init__(self):
-		super().__init__('reach_goal_action')
+		super().__init__('move_both_parallel')
 
 		self.declare_parameter('goal_point', [4.67, 1.0, 1.0])
 		self.goal_point = self.get_parameter('goal_point').value
@@ -47,9 +44,6 @@ class ReachGoalAction(Node):
 		self.joint_trajectory_action_client = ActionClient (self, FollowJointTrajectory, '/joint_trajectory_controller/follow_joint_trajectory')
 		self.compute_path_action_client = ActionClient (self, ComputePathToPose, '/compute_path_to_pose')
 		self.navigate_action_client = ActionClient (self, NavigateToPose, '/navigate_to_pose')
-
-		self.tf_buffer = tf2_ros.Buffer()
-		self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
 
 	def reach_goal(self):
 
@@ -73,52 +67,31 @@ class ReachGoalAction(Node):
 		path = result_future.result().result.path
 
 		#TODO: QUITAR LUEGO
-		with open('path.txt', 'w') as f:
-			for pose_s in path.poses:
-				f.write(str(pose_s.pose.position) + '\n')
+		# with open('path.txt', 'w') as f:
+		# 	for pose_s in path.poses:
+		# 		f.write(str(pose_s.pose.position) + '\n')
 
 		selected_pose, _ = self.select_n_pose(path)
-		# rclpy.shutdown()
 
 		######## 2. NAVIGATE TO POSE ########
 		goal_msg = NavigateToPose.Goal()
 		goal_msg.pose = selected_pose
 
-		self.get_logger().info(f'Selected position: {selected_pose.pose.position}')
-		self.get_logger().info(f'Selected orientation: {selected_pose.pose.orientation}')
-
-		send_goal_future = self.navigate_action_client.send_goal_async(goal_msg)
-		rclpy.spin_until_future_complete(self, send_goal_future)
-		goal_handle = send_goal_future.result()
-		if not goal_handle.accepted:
+		send_goal_future_nav = self.navigate_action_client.send_goal_async(goal_msg)
+		rclpy.spin_until_future_complete(self, send_goal_future_nav)
+		goal_handle_nav = send_goal_future_nav.result()
+		if not goal_handle_nav.accepted:
 			self.get_logger().error('Navigation failed!')
 			rclpy.shutdown()
 		self.get_logger().info('Navigation pose accepted!')
-		result_future = goal_handle.get_result_async()
-		rclpy.spin_until_future_complete(self, result_future)
-		self.get_logger().info('Navigation completed!')
+
+		result_future_nav = goal_handle.get_result_async()
+		result_future_nav.add_done_callback(self.navigation_callback)
+		# rclpy.spin_until_future_complete(self, result_future_nav)
+		# self.get_logger().info('Navigation completed!')
 
 		######## 3. GET ARM INVERSE KINEMATICS ########
 		goal_pose = Transform(rot=goal_orientation, pos=goal_position)
-
-		# tbl = np.quaternion(0, selected_pose.pose.position.x, selected_pose.pose.position.y, selected_pose.pose.position.z)
-		# qbl = np.quaternion(selected_pose.pose.orientation.w, selected_pose.pose.orientation.x, selected_pose.pose.orientation.y, selected_pose.pose.orientation.z)
-		# pm = np.quaternion(0, goal_position[0], goal_position[1], goal_position[2])
-		# tb = np.quaternion(0, 0.197, 0, 0.314)
-		# qb = np.quaternion(1, 0, 0, 0)
-		
-		# pbl = qbl * pm * np.conjugate(qbl) + tbl
-		# pb = qb * pbl * np.conjugate(qb) + tb
-		# Creamos las matrices para simplificar
-		transform_stamped = None
-		while not transform_stamped:
-			try:
-				transform_stamped = self.tf_buffer.lookup_transform('map', 'base_link', rclpy.time.Time())
-				print(f'Base position: {transform_stamped.transform.translation}')
-				print(f'Base orientation: {transform_stamped.transform.rotation}')
-			except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
-				self.get_logger().warn(f"Error looking up transform: {e}")
-
 
 		w_T_bl = self.pose2tranf(Transform(
 			pos=[selected_pose.pose.position.x, selected_pose.pose.position.y, selected_pose.pose.position.z],
@@ -132,7 +105,6 @@ class ReachGoalAction(Node):
 							[0, 0, 1, 0.314],
 							[0, 0, 0, 1]])
 
-		# w_T_p = self.pose2tranf(goal_pose)
 		w_p = np.array([goal_position[0], goal_position[1], goal_position[2], 1]).T
 
 		b_T_w = np.linalg.inv(bl_T_b) @ np.linalg.inv(w_T_bl)
@@ -141,22 +113,14 @@ class ReachGoalAction(Node):
 
 		self.get_logger().info('Calculos realizados!')
 
-		# q = tf.quaternion_from_matrix(b_T_p)
-		# p = b_T_p[:3,3]
-		# p = np.array([0.5, 0.5, 0.0])
-
-		self.get_logger().info(f'Posicion relativa: {w_p.T}')
-
 		p = w_p.T[:3]
 
 		ik = chain.inverse_kinematics(Transform(pos=list(p), rot=goal_orientation)).tolist()
 
 		ik = list(map(self.transform_to_pipi, ik))
 
-		# self.get_logger().info(f'IK calculada! {ik}')
-
 		######## 4. MOVE ARM ########
-		self.get_logger().info('Creando mensajesdasdsad ...')
+		self.get_logger().info('Creando mensaje ...')
 		point_msg = JointTrajectoryPoint()
 		point_msg.positions = ik[:6]
 		point_msg.time_from_start = Duration(seconds=4.0).to_msg()
@@ -169,17 +133,24 @@ class ReachGoalAction(Node):
 
 		self.get_logger().info('Enviando ...!')
 
-		send_goal_future = self.joint_trajectory_action_client.send_goal_async(goal_msg)
-		rclpy.spin_until_future_complete(self, send_goal_future)
-		goal_handle = send_goal_future.result()
-		if not goal_handle.accepted:
+		send_goal_future_joint = self.joint_trajectory_action_client.send_goal_async(goal_msg)
+		rclpy.spin_until_future_complete(self, send_goal_future_joint)
+		goal_handle_joint = send_goal_future_joint.result()
+		if not goal_handle_joint.accepted:
 			self.get_logger().error('Joint configuration not accepted!')
 			rclpy.shutdown()
 		self.get_logger().info('Joint configuration accepted!')
-		result_future = goal_handle.get_result_async()
-		rclpy.spin_until_future_complete(self, result_future)
-		self.get_logger().info('Goal reached!')
+		result_future_joint = goal_handle_joint.get_result_async()
 
+		result_future_joint.add_done_callback(self.joint_trajectory_callback)
+		# rclpy.spin_until_future_complete(self, result_future_joint)
+		# self.get_logger().info('Goal reached!')
+
+	def navigation_callback(self, future):
+		self.get_logger().info('Navigation completed!')
+
+	def joint_trajectory_callback(self, future):
+		self.get_logger().info('Goal reached!')
 	
 	def select_n_pose(self, path, verbose=True):
 		reversed_index = len(path.poses) - 1
@@ -276,7 +247,7 @@ def main(args=None):
 
 	rclpy.init()
 	
-	node = ReachGoalAction()
+	node = MoveBothParallel()
 	future = node.reach_goal()
 	rclpy.spin_once(node)
 

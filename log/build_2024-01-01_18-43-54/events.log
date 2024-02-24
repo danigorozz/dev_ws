@@ -1,0 +1,72 @@
+[0.000000] (-) TimerEvent: {}
+[0.000147] (-) JobUnselected: {'identifier': 'bulldog_description'}
+[0.000178] (-) JobUnselected: {'identifier': 'doosan_description'}
+[0.000200] (-) JobUnselected: {'identifier': 'dsr_description2'}
+[0.000231] (-) JobUnselected: {'identifier': 'ros2_actions'}
+[0.000248] (-) JobUnselected: {'identifier': 'ros2_data'}
+[0.000265] (-) JobUnselected: {'identifier': 'ur5_ros2_gazebo'}
+[0.000281] (-) JobUnselected: {'identifier': 'ur5_ros2_moveit2'}
+[0.000300] (mobile_manipulator) JobQueued: {'identifier': 'mobile_manipulator', 'dependencies': OrderedDict()}
+[0.000319] (mobile_manipulator) JobStarted: {'identifier': 'mobile_manipulator'}
+[0.098904] (-) TimerEvent: {}
+[0.200082] (-) TimerEvent: {}
+[0.300546] (-) TimerEvent: {}
+[0.401730] (-) TimerEvent: {}
+[0.502197] (-) TimerEvent: {}
+[0.602559] (-) TimerEvent: {}
+[0.704249] (-) TimerEvent: {}
+[0.804649] (-) TimerEvent: {}
+[0.905146] (-) TimerEvent: {}
+[1.005639] (-) TimerEvent: {}
+[1.105998] (-) TimerEvent: {}
+[1.206414] (-) TimerEvent: {}
+[1.307009] (-) TimerEvent: {}
+[1.407736] (-) TimerEvent: {}
+[1.508084] (-) TimerEvent: {}
+[1.608678] (-) TimerEvent: {}
+[1.709107] (-) TimerEvent: {}
+[1.809616] (-) TimerEvent: {}
+[1.910037] (-) TimerEvent: {}
+[2.010340] (-) TimerEvent: {}
+[2.110734] (-) TimerEvent: {}
+[2.211503] (-) TimerEvent: {}
+[2.312200] (-) TimerEvent: {}
+[2.412774] (-) TimerEvent: {}
+[2.454082] (mobile_manipulator) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/daniel/dev_ws/build/mobile_manipulator/build', '--no-deps', 'install_data'], 'cwd': '/home/daniel/dev_ws/build/mobile_manipulator', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'daniel', 'SSH_AGENT_PID': '2020', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/daniel/dev_ws/install/ros2_data/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/daniel', 'OLDPWD': '/home/daniel', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1798', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '5927', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/daniel/dev_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'daniel', 'JOURNAL_STREAM': '8:47744', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'daniel', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/home/daniel/dev_ws/src/mobile_manipulator/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/daniel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/dev:@/tmp/.ICE-unix/2055,unix/dev:/tmp/.ICE-unix/2055', 'INVOCATION_ID': '745c3b739b1b403786dbcb9a55f4bd69', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/daniel/dev_ws/install/ur5_ros2_moveit2:/home/daniel/dev_ws/install/ur5_ros2_gazebo:/home/daniel/dev_ws/install/ros2_actions:/home/daniel/dev_ws/install/ros2_data:/home/daniel/dev_ws/install/robot_description:/home/daniel/dev_ws/install/my_doosan_pkg:/home/daniel/dev_ws/install/mobile_manipulator:/home/daniel/dev_ws/install/dsr_description2:/home/daniel/dev_ws/install/doosan_description:/home/daniel/dev_ws/install/bulldog_description:/opt/ros/foxy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:0d37bc76-d161-4f43-b54a-771c5eac273d', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/daniel/dev_ws/build/mobile_manipulator', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:/home/daniel/dev_ws/install/ros2_data/lib/python3.8/site-packages:/home/daniel/dev_ws/build/robot_description:/home/daniel/dev_ws/install/robot_description/lib/python3.8/site-packages:/home/daniel/dev_ws/build/my_doosan_pkg:/home/daniel/dev_ws/install/my_doosan_pkg/lib/python3.8/site-packages:/home/daniel/dev_ws/build/mobile_manipulator:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:/home/daniel/dev_ws/build/doosan_description:/home/daniel/dev_ws/install/doosan_description/lib/python3.8/site-packages:/home/daniel/dev_ws/install/bulldog_description/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/daniel/dev_ws/install/ur5_ros2_moveit2:/home/daniel/dev_ws/install/ur5_ros2_gazebo:/home/daniel/dev_ws/install/ros2_actions:/home/daniel/dev_ws/install/ros2_data:/home/daniel/dev_ws/install/dsr_description2'}, 'shell': False}
+[2.512943] (-) TimerEvent: {}
+[2.613454] (-) TimerEvent: {}
+[2.713772] (-) TimerEvent: {}
+[2.725848] (mobile_manipulator) StdoutLine: {'line': b'running develop\n'}
+[2.813864] (-) TimerEvent: {}
+[2.914231] (-) TimerEvent: {}
+[2.919396] (mobile_manipulator) StdoutLine: {'line': b'running egg_info\n'}
+[2.919678] (mobile_manipulator) StdoutLine: {'line': b'writing mobile_manipulator.egg-info/PKG-INFO\n'}
+[2.919980] (mobile_manipulator) StdoutLine: {'line': b'writing dependency_links to mobile_manipulator.egg-info/dependency_links.txt\n'}
+[2.920260] (mobile_manipulator) StdoutLine: {'line': b'writing entry points to mobile_manipulator.egg-info/entry_points.txt\n'}
+[2.920571] (mobile_manipulator) StdoutLine: {'line': b'writing requirements to mobile_manipulator.egg-info/requires.txt\n'}
+[2.920802] (mobile_manipulator) StdoutLine: {'line': b'writing top-level names to mobile_manipulator.egg-info/top_level.txt\n'}
+[3.014337] (-) TimerEvent: {}
+[3.037826] (mobile_manipulator) StdoutLine: {'line': b"reading manifest file 'mobile_manipulator.egg-info/SOURCES.txt'\n"}
+[3.039115] (mobile_manipulator) StdoutLine: {'line': b"writing manifest file 'mobile_manipulator.egg-info/SOURCES.txt'\n"}
+[3.073915] (mobile_manipulator) StdoutLine: {'line': b'running build_ext\n'}
+[3.103128] (mobile_manipulator) StdoutLine: {'line': b'Creating /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile-manipulator.egg-link (link to .)\n'}
+[3.104295] (mobile_manipulator) StdoutLine: {'line': b'Installing get_path_action script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator\n'}
+[3.104640] (mobile_manipulator) StdoutLine: {'line': b'Installing move_arm script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator\n'}
+[3.104871] (mobile_manipulator) StdoutLine: {'line': b'Installing move_both script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator\n'}
+[3.105153] (mobile_manipulator) StdoutLine: {'line': b'Installing move_both_parallel script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator\n'}
+[3.105322] (mobile_manipulator) StdoutLine: {'line': b'Installing move_to_saved_config script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator\n'}
+[3.105489] (mobile_manipulator) StdoutLine: {'line': b'Installing send_goal_pose_action script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator\n'}
+[3.105667] (mobile_manipulator) StdoutLine: {'line': b'Installing set_gripper_status script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator\n'}
+[3.105958] (mobile_manipulator) StdoutLine: {'line': b'Installing tf_listener script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator\n'}
+[3.106133] (mobile_manipulator) StdoutLine: {'line': b'Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator\n'}
+[3.106370] (mobile_manipulator) StdoutLine: {'line': b'Installing trajectory_points_from_ik_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator\n'}
+[3.106540] (mobile_manipulator) StdoutLine: {'line': b'\n'}
+[3.106693] (mobile_manipulator) StdoutLine: {'line': b'Installed /home/daniel/dev_ws/build/mobile_manipulator\n'}
+[3.106831] (mobile_manipulator) StdoutLine: {'line': b'running install_data\n'}
+[3.114432] (-) TimerEvent: {}
+[3.133691] (mobile_manipulator) CommandEnded: {'returncode': 0}
+[3.214534] (-) TimerEvent: {}
+[3.316685] (-) TimerEvent: {}
+[3.417067] (-) TimerEvent: {}
+[3.448631] (mobile_manipulator) JobEnded: {'identifier': 'mobile_manipulator', 'rc': 0}
+[3.449495] (-) EventReactorShutdown: {}

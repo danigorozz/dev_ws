@@ -36,6 +36,8 @@ setup(
             'send_goal_pose_action = mobile_manipulator.send_goal_pose_action:main',
             'get_path_action = mobile_manipulator.get_path_action:main',
             'move_both = mobile_manipulator.move_both:main',
+            'move_both_2 = mobile_manipulator.move_both_2:main',
+            'move_both_parallel = mobile_manipulator.move_both_parallel:main',
             'move_arm = mobile_manipulator.move_arm:main',
             'move_to_saved_config = mobile_manipulator.move_to_saved_config:main',
             'set_gripper_status = mobile_manipulator.set_gripper_status:main',

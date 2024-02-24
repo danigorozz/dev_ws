@@ -1,0 +1,26 @@
+[2.455s] Invoking command in '/home/daniel/dev_ws/build/mobile_manipulator': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data
+[2.726s] running develop
+[2.919s] running egg_info
+[2.919s] writing mobile_manipulator.egg-info/PKG-INFO
+[2.920s] writing dependency_links to mobile_manipulator.egg-info/dependency_links.txt
+[2.920s] writing entry points to mobile_manipulator.egg-info/entry_points.txt
+[2.920s] writing requirements to mobile_manipulator.egg-info/requires.txt
+[2.921s] writing top-level names to mobile_manipulator.egg-info/top_level.txt
+[3.038s] reading manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[3.039s] writing manifest file 'mobile_manipulator.egg-info/SOURCES.txt'
+[3.074s] running build_ext
+[3.103s] Creating /home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages/mobile-manipulator.egg-link (link to .)
+[3.104s] Installing get_path_action script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[3.104s] Installing move_arm script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[3.105s] Installing move_both script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[3.105s] Installing move_both_parallel script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[3.105s] Installing move_to_saved_config script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[3.105s] Installing send_goal_pose_action script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[3.106s] Installing set_gripper_status script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[3.106s] Installing tf_listener script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[3.106s] Installing trajectory_points_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[3.106s] Installing trajectory_points_from_ik_act_server script to /home/daniel/dev_ws/install/mobile_manipulator/lib/mobile_manipulator
+[3.106s] 
+[3.106s] Installed /home/daniel/dev_ws/build/mobile_manipulator
+[3.107s] running install_data
+[3.134s] Invoked command in '/home/daniel/dev_ws/build/mobile_manipulator' returned '0': PYTHONPATH=/home/daniel/dev_ws/build/mobile_manipulator/prefix_override:/home/daniel/dev_ws/install/mobile_manipulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/daniel/dev_ws/build/mobile_manipulator/build --no-deps install_data

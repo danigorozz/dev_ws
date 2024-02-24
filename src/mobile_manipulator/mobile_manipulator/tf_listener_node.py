@@ -30,7 +30,7 @@ class TFListenerNode(Node):
     def update(self):
         current_time = time.time()
         if current_time - self.last_update_time >= self.update_interval:
-            position = self.get_tf_position('base_link', 'odom')
+            position = self.get_tf_position('base_footprint', 'map')
             if position:
                 self.write_position_to_file(position)
                 self.get_logger().info(f"Posición en target_frame: {position}")
