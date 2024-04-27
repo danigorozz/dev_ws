@@ -18,6 +18,7 @@ class TFListenerNode(Node):
     def get_tf_position(self, target_frame, source_frame):
         try:
             transform_stamped = self.tf_buffer.lookup_transform(target_frame, source_frame, rclpy.time.Time())
+            # transform_stamped = self.tf_buffer.lookup_transform(target_frame, source_frame, 0)
             return transform_stamped.transform.translation
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
             self.get_logger().warn(f"Error looking up transform: {e}")
@@ -30,7 +31,9 @@ class TFListenerNode(Node):
     def update(self):
         current_time = time.time()
         if current_time - self.last_update_time >= self.update_interval:
-            position = self.get_tf_position('base_footprint', 'map')
+            # position = self.get_tf_position('base_footprint', 'map')
+            position = self.get_tf_position('map', 'base_footprint')
+            # position = self.get_tf_position('base_link', 'odom')
             if position:
                 self.write_position_to_file(position)
                 self.get_logger().info(f"Posición en target_frame: {position}")
@@ -40,7 +43,7 @@ def main():
     rclpy.init()
 
     file_path = 'tf_position.txt'
-    update_interval = 0.05  # Intervalo de tiempo en segundos
+    update_interval = 0.3  # Intervalo de tiempo en segundos
     node = TFListenerNode(file_path, update_interval)
 
     try:

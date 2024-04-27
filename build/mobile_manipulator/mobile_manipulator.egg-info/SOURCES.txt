@@ -21,8 +21,8 @@ mobile_manipulator/get_path_action.py
 mobile_manipulator/joint_points_act_service.py
 mobile_manipulator/joint_points_act_service_from_ik.py
 mobile_manipulator/move_arm.py
-mobile_manipulator/move_both _2.py
 mobile_manipulator/move_both.py
+mobile_manipulator/move_both_2.py
 mobile_manipulator/move_both_parallel.py
 mobile_manipulator/move_to_saved_config.py
 mobile_manipulator/send_goal_pose_action.py

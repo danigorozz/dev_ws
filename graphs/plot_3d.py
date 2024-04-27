@@ -58,8 +58,12 @@ reales_m = np.array(reales)
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
-ax.scatter(deseados_m[:,0], deseados_m[:,1], deseados_m[:,1], label="Consigna", alpha=1.0)
-ax.scatter(reales_m[:,0], reales_m[:,1], reales_m[:,1], label="Real", alpha=1.0)
+ax.scatter(deseados_m[:,0], deseados_m[:,1], deseados_m[:,2], label="Consigna", alpha=1.0)
+ax.scatter(reales_m[:,0], reales_m[:,1], reales_m[:,2], label="Real", alpha=1.0)
+
+offset = 0.03
+for key, value in PUNTOS.items():
+    ax.text(value['deseado'][0] + offset, value['deseado'][1] + offset, value['deseado'][2] + offset, key)
 
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
